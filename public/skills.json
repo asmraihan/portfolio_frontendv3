@@ -1,0 +1,184 @@
+[
+  {
+    "_id": "76442fa9-d678-445c-b20f-112264173981",
+    "_rev": "MGvyMBvlSfELxXPfT1Jyl4",
+    "_type": "skills",
+    "icon": {
+      "_type": "image",
+      "asset": {
+        "_ref": "/src/assets/git.png",
+        "_type": "reference"
+      }
+    },
+    "name": "git",
+    "_createdAt": "2023-04-24T11:25:21.209903357Z",
+    "_updatedAt": "2023-04-24T11:25:17.764Z"
+  },
+  {
+    "_id": "76442fa9-d678-445c-b20f-112264173982",
+    "_rev": "MGvyMBvlSfELxXPfT1Jyl4",
+    "_type": "skills",
+    "icon": {
+      "_type": "image",
+      "asset": {
+        "_ref": "/src/assets/html.png",
+        "_type": "reference"
+      }
+    },
+    "name": "Html",
+    "_createdAt": "2023-04-24T11:25:21.209903357Z",
+    "_updatedAt": "2023-04-24T11:25:17.764Z"
+  },
+  {
+    "_id": "76442fa9-d678-445c-b20f-112264173983",
+    "_rev": "MGvyMBvlSfELxXPfT1Jyl4",
+    "_type": "skills",
+    "icon": {
+      "_type": "image",
+      "asset": {
+        "_ref": "/src/assets/css.png",
+        "_type": "reference"
+      }
+    },
+    "name": "CSS",
+    "_createdAt": "2023-04-24T11:25:21.209903357Z",
+    "_updatedAt": "2023-04-24T11:25:17.764Z"
+  },
+  {
+    "_id": "76442fa9-d678-445c-b20f-112264173984",
+    "_rev": "MGvyMBvlSfELxXPfT1Jyl4",
+    "_type": "skills",
+    "icon": {
+      "_type": "image",
+      "asset": {
+        "_ref": "/src/assets/node.png",
+        "_type": "reference"
+      }
+    },
+    "name": "Node Js",
+    "_createdAt": "2023-04-24T11:25:21.209903357Z",
+    "_updatedAt": "2023-04-24T11:25:17.764Z"
+  },
+  {
+    "_id": "76442fa9-d678-445c-b20f-112264173985",
+    "_rev": "MGvyMBvlSfELxXPfT1Jyl4",
+    "_type": "skills",
+    "icon": {
+      "_type": "image",
+      "asset": {
+        "_ref": "/src/assets/cpp.png",
+        "_type": "reference"
+      }
+    },
+    "name": "C++",
+    "_createdAt": "2023-04-24T11:25:21.209903357Z",
+    "_updatedAt": "2023-04-24T11:25:17.764Z"
+  },
+  {
+    "_id": "76442fa9-d678-445c-b20f-112264173986",
+    "_rev": "MGvyMBvlSfELxXPfT1Jyl4",
+    "_type": "skills",
+    "icon": {
+      "_type": "image",
+      "asset": {
+        "_ref": "/src/assets/express.png",
+        "_type": "reference"
+      }
+    },
+    "name": "Express Js",
+    "_createdAt": "2023-04-24T11:25:21.209903357Z",
+    "_updatedAt": "2023-04-24T11:25:17.764Z"
+  },
+  {
+    "_id": "76442fa9-d678-445c-b20f-112264173987",
+    "_rev": "MGvyMBvlSfELxXPfT1Jyl4",
+    "_type": "skills",
+    "icon": {
+      "_type": "image",
+      "asset": {
+        "_ref": "/src/assets/react.png",
+        "_type": "reference"
+      }
+    },
+    "name": "React",
+    "_createdAt": "2023-04-24T11:25:21.209903357Z",
+    "_updatedAt": "2023-04-24T11:25:17.764Z"
+  },
+  {
+    "_id": "76442fa9-d678-445c-b20f-112264173988",
+    "_rev": "MGvyMBvlSfELxXPfT1Jyl4",
+    "_type": "skills",
+    "icon": {
+      "_type": "image",
+      "asset": {
+        "_ref": "/src/assets/javascript.png",
+        "_type": "reference"
+      }
+    },
+    "name": "JavaScript",
+    "_createdAt": "2023-04-24T11:25:21.209903357Z",
+    "_updatedAt": "2023-04-24T11:25:17.764Z"
+  },
+  {
+    "_id": "76442fa9-d678-445c-b20f-112264173912",
+    "_rev": "MGvyMBvlSfELxXPfT1Jyl4",
+    "_type": "skills",
+    "icon": {
+      "_type": "image",
+      "asset": {
+        "_ref": "/src/assets/typescript.png",
+        "_type": "reference"
+      }
+    },
+    "name": "TypeScript",
+    "_createdAt": "2023-04-24T11:25:21.209903357Z",
+    "_updatedAt": "2023-04-24T11:25:17.764Z"
+  },
+  {
+    "_id": "76442fa9-d678-445c-b20f-112264173911",
+    "_rev": "MGvyMBvlSfELxXPfT1Jyl4",
+    "_type": "skills",
+    "icon": {
+      "_type": "image",
+      "asset": {
+        "_ref": "/src/assets/mu5.png",
+        "_type": "reference"
+      }
+    },
+    "name": "Material UI",
+    "_createdAt": "2023-04-24T11:25:21.209903357Z",
+    "_updatedAt": "2023-04-24T11:25:17.764Z"
+  },
+  {
+    "_id": "76442fa9-d678-445c-b20f-112264173989",
+    "_rev": "MGvyMBvlSfELxXPfT1Jyl4",
+    "_type": "skills",
+    "icon": {
+      "_type": "image",
+      "asset": {
+        "_ref": "/src/assets/python.png",
+        "_type": "reference"
+      }
+    },
+    "name": "Python",
+    "_createdAt": "2023-04-24T11:25:21.209903357Z",
+    "_updatedAt": "2023-04-24T11:25:17.764Z"
+  },
+  {
+    "_id": "76442fa9-d678-445c-b20f-1122641739810",
+    "_rev": "MGvyMBvlSfELxXPfT1Jyl4",
+    "_type": "skills",
+    "icon": {
+      "_type": "image",
+      "asset": {
+        "_ref": "/src/assets/tailwind.png",
+        "_type": "reference"
+      }
+    },
+    "name": "TailWind",
+    "_createdAt": "2023-04-24T11:25:21.209903357Z",
+    "_updatedAt": "2023-04-24T11:25:17.764Z"
+  }
+  
+  
+  ]
