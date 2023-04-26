@@ -25,7 +25,7 @@ const Header = () => {
                 className='overlay circle absolute -left-12 -z-10 w-full h-[90%]'
             >
                 <div className='header badge absolute top-16 z-50'>
-                    <div className="rounded-lg border-2 border-gray-500/10 border-dotted px-4 py-2 text-center">
+                    <div className="rounded-lg hidden lg:block border-2 border-gray-500/10 border-dotted px-4 py-2 text-center">
                         <span className="text-primary uppercase">under</span>
                         <p className="text-orange-500 font-semibold text-xl uppercase">development</p>
                     </div>
@@ -43,7 +43,7 @@ const Header = () => {
                         A full-stack developer
                     </p>
 
-                    <div className="w-full lg:w-auto grid grid-cols-1 lg:grid-cols-4 gap-4 mt-24">
+                    <div className="w-5/6 lg:w-auto grid grid-cols-1 lg:grid-cols-4 gap-4 lg:mt-24 mt-8">
                         <div className="rounded-lg border-2 border-gray-500/10 border-dotted px-4 py-2 text-center">
                             <span className="text-primary uppercase">Technologies</span>
                             <p className="text-gray-500 dark:text-gray-300 font-semibold text-xl">30+</p>
@@ -90,13 +90,13 @@ const Header = () => {
                         <img className='p-3' src={circle} alt="circle" />
                     </div>)} */}
 
-                <div className='w-24 -ml-64 mt-16 absolute rounded-full shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]'>
+                <div className='hidden lg:block w-24 -ml-64 mt-16 absolute rounded-full shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]'>
                     <img className='p-3' src={images.node} alt="circle" />
                 </div>
-                <div className='w-36 -ml-36 mt-24 absolute rounded-full shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]'>
+                <div className='hidden lg:block w-36 -ml-36 mt-24 absolute rounded-full shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]'>
                     <img className='p-3' src={images.react} alt="circle" />
                 </div>
-                <div className='w-20 -ml-40 mt-72 absolute rounded-full  shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]'>
+                <div className='hidden lg:block w-20 -ml-40 mt-72 absolute rounded-full  shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]'>
                     <img className='p-3' src={images.css} alt="circle" />
                 </div>
             </motion.div>

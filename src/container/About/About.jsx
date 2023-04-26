@@ -16,7 +16,7 @@ const About = () => {
     return (
         <div className='relative flex flex-col justify-center items-center '>
             <h2 className='text-4xl font-bold text-center '>About me</h2>
-            <div className='app profile flex justify-center items-start flex-wrap mt-8'>
+            <div className='app profile mx-auto flex justify-center items-start flex-wrap mt-8'>
                 {
                     abouts.map((about, index) => (
                         <motion.div
@@ -48,7 +48,7 @@ const About = () => {
                         </p>
 
                     </div>
-                    <div className="relative flex-shrink-0">
+                    <div className="relative flex-shrink-0 hover:animate-bounce ">
                         <img src={images.me} style={{ zIndex: 1 }} className="relative shadow-xl z-1 w-full lg:w-64 h-full lg:h-64 rounded-full lg:rounded-lg" />
                         <div className="absolute w-full h-full top-1 -right-1 border-4 rounded-full lg:rounded-lg" />
                     </div>

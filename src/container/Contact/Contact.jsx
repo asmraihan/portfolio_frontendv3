@@ -6,7 +6,7 @@ import AppWrap from '../../wrapper/AppWrap';
 const Contact = () => {
     const { isTheme, toggleTheme } = useTheme();
     return (
-        <div className='w-4/6 mx-auto mb-10'>
+        <div className='lg:w-4/6 w-5/6 mx-auto mb-10'>
             <form>
                 <h1 className="text-4xl font-bold">Contact</h1>
                 <p className="text-sm mt-1 text-gray-500">
