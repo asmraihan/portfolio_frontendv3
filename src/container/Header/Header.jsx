@@ -5,32 +5,34 @@ import AppWrap from '../../wrapper/AppWrap';
 import { useTheme } from '../../constants/theme';
 import { FaDownload } from 'react-icons/fa';
 // import SphereModel from "../../components/Sphere";
-const scaleVariants = {
-    whileInView: {
-        scale: [0, 1],
-        opacity: [0, 1],
-        transition: {
-            
-            duration: 1.5,
-            ease: easeInOut
-        }
-    }
-}
+
+// const scaleVariants = {
+//     whileInView: {
+//         scale: [0, 1],
+//         opacity: [0, 1],
+//         transition: {
+
+//             duration: 1.5,
+//             ease: easeInOut
+//         }
+//     }
+// }
 const Header = () => {
     const { isTheme, toggleTheme } = useTheme();
     return (
         <div className="lg:flex justify-center items-center relative">
             <motion.div
-                whileInView={{ scale: [0, 1] }}
-                transition={{ duration: 1, ease: 'easeInOut' }}
-                className='overlay circle absolute -left-12 -z-10 w-full h-[90%]'
+                animate={{ x: [0, 50] }}
+                whileInView={{ opacity: [0, 1] }}
+                transition={{ duration: 2, ease: 'easeInOut' }}
+                className=' absolute -left-12 -z-10 w-full h-[90%]'
             >
                 <div className='header badge absolute top-16 z-50'>
                     <div className="rounded-lg hidden lg:block border-2 border-gray-500/10 border-dotted px-4 py-2 text-center">
                         <span className="text-primary uppercase">under</span>
                         <p className="text-orange-500 font-semibold text-xl uppercase">development</p>
                     </div>
-                     
+
                 </div>
             </motion.div>
             <motion.div
@@ -79,13 +81,17 @@ const Header = () => {
                       <SphereModel/>
                 </motion.div> */}
 
-              
+
             </motion.div>
 
             <motion.div
-                variants={scaleVariants}
-                whileInView={scaleVariants.whileInView}
-                className='absolute -right-12 h-full'>
+                animate={{ x: [0, 50], y: [0, -50] } }
+                whileInView={{ opacity: [0, 1] }}
+                transition={{ duration: 2, ease: 'easeInOut' }}
+
+                // variants={scaleVariants}
+                // whileInView={scaleVariants.whileInView}
+                className='absolute right-0 top-10 h-full'>
                 <div className='hidden lg:block w-24 -ml-64 mt-16 absolute rounded-full shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]'>
                     <img className='p-3' src={images.node} alt="circle" />
                 </div>

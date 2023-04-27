@@ -39,7 +39,7 @@ const Work = () => {
     return (
         <div className='relative flex flex-col justify-center items-center min-h-screen'>
             <h2 className='text-4xl font-bold text-center mt-10'>My Works</h2>
-            <h4 className='text-2xl text-center mt-4'><span>Things</span> <span>I've been working so far</span></h4>
+            <h4 className='text-2xl text-center mt-4 mb-8'><span>Things</span> <span>I've been working so far</span></h4>
 
             <div className='app_work-filter flex justify-center gap-4 items-center flex-wrap m-4'>
                 {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
@@ -57,7 +57,7 @@ const Work = () => {
                 <motion.div
                     animate={animateCard}
                     transition={{ duration: 0.5, delayChildren: 0.5 }}
-                    className='grid grid-cols-1 lg:grid-cols-4 gap-8 mt-16 min-h-[356px]'
+                    className='grid grid-cols-1 lg:grid-cols-4 gap-8 mt-4 min-h-[356px]'
                 >
 
                     {/* map here*/}
