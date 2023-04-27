@@ -20,7 +20,7 @@ import { FaDownload } from 'react-icons/fa';
 const Header = () => {
     const { isTheme, toggleTheme } = useTheme();
     return (
-        <div className="lg:flex justify-center items-center relative">
+        <div className="lg:flex justify-center items-center relative min-h-screen">
             <motion.div
                 animate={{ x: [0, 50] }}
                 whileInView={{ opacity: [0, 1] }}

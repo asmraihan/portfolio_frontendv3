@@ -1,6 +1,5 @@
 import React from 'react';
 import { images } from '../../constants';
-import { FaHeart } from 'react-icons/fa';
 import { motion } from 'framer-motion'
 import { AppWrap } from '../../wrapper';
 import { useTheme } from '../../constants/theme';
@@ -15,7 +14,7 @@ const abouts = [
 const About = () => {
     const { isTheme, toggleTheme } = useTheme();
     return (
-        <div className='relative flex flex-col justify-center items-center '>
+        <div className='relative flex flex-col justify-center items-center min-h-screen '>
             <h2 className='text-4xl font-bold text-center '>About me</h2>
             <div className='app px-5 profile mx-auto flex justify-center items-start grid grid-cols-1 lg:grid-cols-2 gap-12 mt-20'>
                 {
@@ -45,11 +44,10 @@ const About = () => {
                     <div>
                         <h1 className="text-4xl font-bold mb-3">Who Am <span className="relative whitespace-nowrap text-primary">I</span>?</h1>
                         <p className="text-xl mt-1">
-                            Hello, I'm Raihan, fullstack developer.
-                            I am a 4th year university student, I have been working with software/technology for about 6 months.
-                            I started with Javascript, developed some Frontend projects.
-                            For the past 6 months i have been trying to improve my software knowledge everyday, finally here I am.
-                            Thank you for reading <FaHeart className='inline-block'></FaHeart>
+
+                            Hello! I'm Raihan, <br /> I am a Fullstack developer from Bangladesh. I started with Javascript, developed some Frontend projects.
+                            For the past year i have been trying to improve my software knowledge everyday, finally here I am. <br /> You can contact me for more information about me.
+                          
                         </p>
 
                     </div>
