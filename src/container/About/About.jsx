@@ -16,42 +16,31 @@ const About = () => {
     return (
         <div className='relative flex flex-col justify-center items-center '>
             <h2 className='text-4xl font-bold text-center '>About me</h2>
-            <div className='app profile mx-auto flex justify-center items-start flex-wrap mt-8'>
+            <div className='app px-5 profile mx-auto flex justify-center items-start grid grid-cols-1 lg:grid-cols-2 gap-12 mt-20'>
                 {
                     abouts.map((about, index) => (
                         <motion.div
-                            whileInView={{ opacity: 1 }}
-                            whileHover={{ scale: 1.1 }}
-                            transition={{ duration: 0.5, type: 'tween' }}
-                            className='app_profile_item w-[190px] flex justify-start items-start flex-col m-7 '
-                            key={about.title + index}
-                        >
-                            <img src={about.imgUrl} alt={about.title}
-                                className='w-full h-[120px] rounded-2xl object-cover' />
-                            <h2 className='font-bold mt-5'>{about.title}</h2>
-                            <p className='text-sm text-gray-500 mt-2'>{about.description}</p>
-                        </motion.div>
+                        whileInView={{ opacity: 1 }}
+                        whileHover={{ scale: 1.1 }}
+                        transition={{ duration: 0.2, type: 'tween' }}
+                        className='flip-effect flex justify-between p-4 rounded-lg gap-4'
+                        key={index}
+                    >
+                        <div>
+                        <h2 className='font-bold mt-5'>{about.title}</h2>
+                        <p className='text-sm text-gray-500 mt-2'>{about.description}</p>
+                        </div>
+                      
+                        <img src={about.imgUrl} alt={about.title}
+                            className='max-w-[238px] h-fit overflow-clip rounded-2xl object-cover' />
+                       
+                       
+                    </motion.div>
                     ))
                 }
             </div>
 
-            {/* test */}
-            <div
-                // whileInView={{ opacity: 1 }}
-                // whileHover={{ scale: 1.1 }}
-                // transition={{ duration: 0.5, type: 'tween' }}
-                className='flip-effect '
-              
-            >
-                <div>
-                <h2 className='font-bold mt-5'>Test Title</h2>
-                <p className='text-sm text-gray-500 mt-2'>Lorem ipsum dolor sit amet.</p>
-                </div>
-                <img src={images.about01} alt=''
-                    className='max-w-[238px] h-fit overflow-clip rounded-2xl object-cover' />
-               
-            </div>
-            {/*  */}
+    
             <div className="w-5/6 mx-auto">
                 <div className="flex flex-col lg:flex-row justify-between items-center w-full h-full py-24 gap-24">
                     <div>

@@ -11,15 +11,15 @@ const TextSphere = () => {
         "CSS",
         "SASS",
         "JavaScript",
-        "React",
+        "Redux",
         "Bootstrap",
         "Next",
         "NodeJS",
-        "Babel",
+        "JSON",
         "Jquery",
         "ES6",
         "VSCode",
-        "GITHUB",
+        "REST API",
       ];
 
       const options = {
