@@ -4,6 +4,7 @@ import { easeInOut, motion } from 'framer-motion'
 import { AppWrap } from '../../wrapper';
 import { useTheme } from '../../constants/theme';
 import SphereModel from "../../components/Sphere";
+import TextSphere from '../../components/TextSphere';
 const Skills = () => {
     const { isTheme, toggleTheme } = useTheme();
     const [skills, setSkills] = useState([])
@@ -47,8 +48,10 @@ const Skills = () => {
                 </motion.div>        
             </div>
 
-            <div className='proton w-1/2 h-[400px] hidden lg:block '>
+            <div className='proton w-1/2 h-[400px] relative hidden lg:block'>
             <SphereModel></SphereModel>       
+            <TextSphere >
+            </TextSphere>
             </div>
            </div>
                            

@@ -35,6 +35,23 @@ const About = () => {
                 }
             </div>
 
+            {/* test */}
+            <div
+                // whileInView={{ opacity: 1 }}
+                // whileHover={{ scale: 1.1 }}
+                // transition={{ duration: 0.5, type: 'tween' }}
+                className='flip-effect '
+              
+            >
+                <div>
+                <h2 className='font-bold mt-5'>Test Title</h2>
+                <p className='text-sm text-gray-500 mt-2'>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <img src={images.about01} alt=''
+                    className='max-w-[238px] h-fit overflow-clip rounded-2xl object-cover' />
+               
+            </div>
+            {/*  */}
             <div className="w-5/6 mx-auto">
                 <div className="flex flex-col lg:flex-row justify-between items-center w-full h-full py-24 gap-24">
                     <div>

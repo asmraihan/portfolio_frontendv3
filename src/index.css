@@ -80,3 +80,14 @@ body {
     top: 25%;
     background: radial-gradient(at 0% 150%, #ae2aff 0, transparent 50%);
 }
+
+
+.flip-effect {
+    background-color: rgb(18, 33, 54);
+    padding: 10px;
+}
+
+.flip-effect img:hover{
+    cursor: pointer;
+}
+

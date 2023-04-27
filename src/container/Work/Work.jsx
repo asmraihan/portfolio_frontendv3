@@ -41,7 +41,7 @@ const Work = () => {
             <h2 className='text-4xl font-bold text-center mt-10'>My Works</h2>
             <h4 className='text-2xl text-center mt-4'><span>Things</span> <span>I've been working so far</span></h4>
 
-            <div className='app_work-filter flex justify-center gap-4 items-center flex-wrap m-8'>
+            <div className='app_work-filter flex justify-center gap-4 items-center flex-wrap m-4'>
                 {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
                     <div
                         key={index}

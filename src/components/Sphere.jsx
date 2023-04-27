@@ -11,15 +11,15 @@ function Box(props) {
   // Return the view, these are regular Threejs elements expressed in JSX
   return (
     <mesh {...props} ref={ref}>
-      <sphereGeometry args={[2.5, 100, 200]} />
+      <sphereGeometry args={[2, 20, 10]} />
       <meshStandardMaterial
-
+        wireframe
         roughness={0.2}
         metalness={0.7}
-        // roughnessMap={texture}
-        normalMap={texture}
-        color={"#292929"}
-        attach={"material"}
+      // roughnessMap={texture}
+      // normalMap={texture}
+      // color={"#292929"}
+      // attach={"material"}
       // distort={0.5}
       // speed={1}
       />
@@ -29,7 +29,7 @@ function Box(props) {
 
 export default function App() {
   return (
-    <Canvas>
+    <Canvas className="w-full h-full absolute -top-10">
       <ambientLight intensity={0.5} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
       <pointLight color="#39b5fb" position={[1.1, 1, -0.31]} intensity={6.8} />
