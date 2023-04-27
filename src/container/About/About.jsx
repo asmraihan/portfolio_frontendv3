@@ -3,6 +3,7 @@ import { images } from '../../constants';
 import { FaHeart } from 'react-icons/fa';
 import { motion } from 'framer-motion'
 import { AppWrap } from '../../wrapper';
+import { useTheme } from '../../constants/theme';
 
 const abouts = [
     { title: 'Frontend Development', description: 'I am a full stack dev', imgUrl: images.about01 },
@@ -12,7 +13,7 @@ const abouts = [
 ]
 
 const About = () => {
-
+    const { isTheme, toggleTheme } = useTheme();
     return (
         <div className='relative flex flex-col justify-center items-center '>
             <h2 className='text-4xl font-bold text-center '>About me</h2>
@@ -20,27 +21,25 @@ const About = () => {
                 {
                     abouts.map((about, index) => (
                         <motion.div
-                        whileInView={{ opacity: 1 }}
-                        whileHover={{ scale: 1.1 }}
-                        transition={{ duration: 0.2, type: 'tween' }}
-                        className='flip-effect flex justify-between p-4 rounded-lg gap-4'
-                        key={index}
-                    >
-                        <div>
-                        <h2 className='font-bold mt-5'>{about.title}</h2>
-                        <p className='text-sm text-gray-500 mt-2'>{about.description}</p>
-                        </div>
-                      
-                        <img src={about.imgUrl} alt={about.title}
-                            className='max-w-[238px] h-fit overflow-clip rounded-2xl object-cover' />
-                       
-                       
-                    </motion.div>
+                            whileInView={{ opacity: 1 }}
+                            whileHover={{ scale: 1.1 }}
+                            transition={{ duration: 0.2, type: 'tween' }}
+                            className={`flip-effect ${isTheme === 'dark' ? 'dark:bg-[#0F1011]' : 'bg-gray-500/5'}   flex justify-between p-4 rounded-lg gap-4`}
+                            key={index}
+                        >
+                            <div>
+                                <h2 className='font-bold mt-5'>{about.title}</h2>
+                                <p className='text-sm text-gray-500 mt-2'>{about.description}</p>
+                            </div>
+
+                            <img src={about.imgUrl} alt={about.title}
+                                className='max-w-[238px] h-fit overflow-clip rounded-xl object-cover' />
+                        </motion.div>
                     ))
                 }
             </div>
 
-    
+
             <div className="w-5/6 mx-auto">
                 <div className="flex flex-col lg:flex-row justify-between items-center w-full h-full py-24 gap-24">
                     <div>
@@ -54,7 +53,7 @@ const About = () => {
                         </p>
 
                     </div>
-                    <div className="relative flex-shrink-0 hover:animate-bounce ">
+                    <div className="relative flex-shrink-0 hover:animate-pulse">
                         <img src={images.me} style={{ zIndex: 1 }} className="relative shadow-xl z-1 w-full lg:w-64 h-full lg:h-64 rounded-full lg:rounded-lg" />
                         <div className="absolute w-full h-full top-1 -right-1 border-4 rounded-full lg:rounded-lg" />
                     </div>

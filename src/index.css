@@ -85,19 +85,19 @@ body {
 .flip-effect {
     transition: 0.6s ease all;
     /* animation: animation-jump 2s ease-in-out infinite; */
-    background-color: #0F1011;
-    box-shadow: rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
-        rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
+    
+    box-shadow: rgba(22, 31, 39, 0.42) ,
+        rgba(19, 26, 32, 0.08) ;
 }
 .flip-effect:hover {
     background: rgba(59, 235, 176, 0.462);
 }
 
 .flip-effect:hover img {
-    transform: perspective(300px) rotateY(-30deg)  translateX(-30px)  scale(1.2) ;
-    filter: blur(0);
-    opacity: 1;
-    border-radius: 10px;
+    transform: perspective(300px) rotateY(-30deg) translateX(-30px) scale(1.2) ;
+    /* filter: blur(0); */
+    /* opacity: 1; */
+    /* border-radius: 10px; */
 }
 .flip-effect:hover p {
     color: white;
