@@ -6,7 +6,7 @@
     "icon": {
       "_type": "image",
       "asset": {
-        "_ref": "/src/assets/git.png",
+        "_ref": "https://i.ibb.co/stz4572/git.png",
         "_type": "reference"
       }
     },
@@ -21,7 +21,7 @@
     "icon": {
       "_type": "image",
       "asset": {
-        "_ref": "/src/assets/html.png",
+        "_ref": "https://i.ibb.co/CvXwqVD/html.png",
         "_type": "reference"
       }
     },
@@ -36,7 +36,7 @@
     "icon": {
       "_type": "image",
       "asset": {
-        "_ref": "/src/assets/css.png",
+        "_ref": "https://i.ibb.co/HPnmLtw/css.png",
         "_type": "reference"
       }
     },
@@ -51,7 +51,7 @@
     "icon": {
       "_type": "image",
       "asset": {
-        "_ref": "/src/assets/node.png",
+        "_ref": "https://i.ibb.co/ZSp6BSV/node.png",
         "_type": "reference"
       }
     },
@@ -66,7 +66,7 @@
     "icon": {
       "_type": "image",
       "asset": {
-        "_ref": "/src/assets/cpp.png",
+        "_ref": "https://i.ibb.co/56hTMwP/cpp.png",
         "_type": "reference"
       }
     },
@@ -81,7 +81,7 @@
     "icon": {
       "_type": "image",
       "asset": {
-        "_ref": "/src/assets/express.png",
+        "_ref": "https://i.ibb.co/5h7HwCk/express.png",
         "_type": "reference"
       }
     },
@@ -96,7 +96,7 @@
     "icon": {
       "_type": "image",
       "asset": {
-        "_ref": "/src/assets/react.png",
+        "_ref": "https://i.ibb.co/xJ08qGG/react.png",
         "_type": "reference"
       }
     },
@@ -111,7 +111,7 @@
     "icon": {
       "_type": "image",
       "asset": {
-        "_ref": "/src/assets/javascript.png",
+        "_ref": "https://i.ibb.co/Lkj3KVf/javascript.png",
         "_type": "reference"
       }
     },
@@ -126,7 +126,7 @@
     "icon": {
       "_type": "image",
       "asset": {
-        "_ref": "/src/assets/typescript.png",
+        "_ref": "https://i.ibb.co/TwPzRc7/typescript.png",
         "_type": "reference"
       }
     },
@@ -141,7 +141,7 @@
     "icon": {
       "_type": "image",
       "asset": {
-        "_ref": "/src/assets/mu5.png",
+        "_ref": "https://i.ibb.co/pZkSnnM/mu5.png",
         "_type": "reference"
       }
     },
@@ -156,7 +156,7 @@
     "icon": {
       "_type": "image",
       "asset": {
-        "_ref": "/src/assets/python.png",
+        "_ref": "https://i.ibb.co/YhdxBj0/python.png",
         "_type": "reference"
       }
     },
@@ -171,7 +171,7 @@
     "icon": {
       "_type": "image",
       "asset": {
-        "_ref": "/src/assets/tailwind.png",
+        "_ref": "https://i.ibb.co/2nPPH9N/tailwind.png",
         "_type": "reference"
       }
     },
