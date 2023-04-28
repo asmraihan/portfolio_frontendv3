@@ -4,7 +4,7 @@
   <a href="https://portfolio-asm-vthreejs.netlify.app/" target="_blank">raihan.me</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="./Images/header.png" />
+  <img alt="Demo" src="./images/header.png" />
   <img alt="Demo" src="./Images/skills.png" />
 </div>
 
