@@ -24,7 +24,7 @@ const Skills = () => {
 
     return (
         <div className='w-5/6 mx-auto relative flex flex-col justify-center items-center min-h-screen'>
-            <h2 className='text-4xl font-bold text-center my-10'>Skills & Tools</h2>
+            <h2 className='text-4xl font-bold text-center mb-16'>Skills & Tools</h2>
            <div className='lg:flex justify-center items-center '>
            <div className='lg:w-1/2 w-full mx-auto'>
                 <motion.div className='grid grid-cols-3 lg:grid-cols-4'>
