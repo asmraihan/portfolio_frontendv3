@@ -37,7 +37,7 @@ const Work = () => {
         }, 500);
     }
     return (
-        <div className='relative flex flex-col justify-center items-center min-h-screen'>
+        <div className=' w-5/6 relative flex flex-col justify-center items-center min-h-screen'>
             <h2 className='text-4xl font-bold text-center mt-10'>My Works</h2>
             <h4 className='text-2xl text-center mt-4 mb-8'><span>Things</span> <span>I've been working so far</span></h4>
 
@@ -65,7 +65,7 @@ const Work = () => {
                     {filterWork.map((work, index) => (
                          <div key={index} target="_blank" rel="noreferrer" className="cursor-pointer w-full bg-gray-500/5 p-4 rounded-lg transition-all duration-200 hover:bg-gray-500/10 ">
                          <div className="h-36 w-full relative rounded-lg shadow-xl overflow-hidden">
-                             <img src={images.about03} className="absolute w-full h-full object-cover " />
+                             <img src={work?.imgUrl?.asset?._ref} className="absolute w-full h-full object-cover " />
                              <motion.div
                                     whileHover={{ opacity: [0, 1] }}
                                     transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
@@ -99,7 +99,7 @@ const Work = () => {
                              
                          </div>
                          <div className='app_work_tag'>
-                                    <p className='text-xs text-center px-3 py-1.5 rounded top-[-18px] right-[37%]'>#{work.tags[0]}</p>
+                                    <p className='text-xs text-center px-3 py-1.5 rounded mt-4'>#{work.tags[0]}</p>
                                 </div>
                          <p className="text-xs italic mt-6"><i className="fal fa-globe mr-1" />{work.projectLink}</p>
                      </div>                

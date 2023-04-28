@@ -5,21 +5,21 @@
         "_rev": "bOAZZ17pVhEULXs1hkUk84",
         "_type": "works",
         "_updatedAt": "2023-04-24T09:42:23Z",
-        "codeLink": "https://github.com",
-        "description": "A frontend ui/ux portfolio",
+        "codeLink": "https://github.com/asmraihan/text_editor",
+        "description": "Reach text editor using basic HTML, CSS, JavaScript",
         "imgUrl": {
           "_type": "image",
           "asset": {
-            "_ref": "image-db53adca404b7410a2869db815e4ce77da2e7e53-1200x900-png",
+            "_ref": "https://i.ibb.co/svR2wQb/texteditor.png",
             "_type": "reference"
           }
         },
-        "projectLink": "https://react-icons.github.io/react-icons/",
+        "projectLink": "https://text-editor-flame.vercel.app/",
         "tags": [
-          "UI/UX",
+          "Web App",
           "All"
         ],
-        "title": "Developer Portfolio"
+        "title": "Rich Text Editor"
       },
     {
         "_createdAt": "2023-04-24T09:42:23Z",
@@ -27,23 +27,94 @@
         "_rev": "bOAZZ17pVhEULXs1hkUk84",
         "_type": "works",
         "_updatedAt": "2023-04-24T09:42:23Z",
-        "codeLink": "https://github.com",
-        "description": "Modern ui/ux portfolio",
+        "codeLink": "https://github.com/asmraihan/movie_marathon",
+        "description": "Movie ticket booking website ",
         "imgUrl": {
           "_type": "image",
           "asset": {
-            "_ref": "image-db53adca404b7410a2869db815e4ce77da2e7e53-1200x900-png",
+            "_ref": "https://i.ibb.co/NCvDbbh/moviemarathon.png",
             "_type": "reference"
           }
         },
-        "projectLink": "https://react-icons.github.io/react-icons/",
+        "projectLink": "https://movie-marathon.vercel.app/",
         "tags": [
           "React JS",
           "All"
         ],
-        "title": "Modern UI/UX Design"
+        "title": "Movie marathon"
       },
-    {
+  
+      {
+        "_createdAt": "2023-04-24T09:42:23Z",
+        "_id": "144c9332-6219-47cf-ae63-068996cf8f27",
+        "_rev": "bOAZZ17pVhEULXs1hkUk84",
+        "_type": "works",
+        "_updatedAt": "2023-04-24T09:42:23Z",
+        "codeLink": "https://github.com/asmraihan/nextpage_bookstore",
+        "description": "Bookstore site using react and tailwind",
+        "imgUrl": {
+          "_type": "image",
+          "asset": {
+            "_ref": "https://i.ibb.co/PF1GXFN/nextpage.png",
+            "_type": "reference"
+          }
+        },
+        "projectLink": "https://nextpage-bookstore.vercel.app/",
+        "tags": [
+          "UI/UX",
+          "React JS",
+          "All"
+        ],
+        "title": "NextPage Bookstore"
+      },
+      {
+        "_createdAt": "2023-04-24T09:42:23Z",
+        "_id": "144c9332-6219-47cf-ae63-068996cf8f27",
+        "_rev": "bOAZZ17pVhEULXs1hkUk84",
+        "_type": "works",
+        "_updatedAt": "2023-04-24T09:42:23Z",
+        "codeLink": "https://github.com/asmraihan/smart_gadget",
+        "description": "Gadget Store using react and tailwind",
+        "imgUrl": {
+          "_type": "image",
+          "asset": {
+            "_ref": "https://i.ibb.co/7bvCwm5/smartgadget.png",
+            "_type": "reference"
+          }
+        },
+        "projectLink": "https://smart-gadget.vercel.app/",
+        "tags": [
+          "UI/UX",
+          "React JS",
+          "All"
+        ],
+        "title": "SmartGadget Shop"
+      },
+      {
+        "_createdAt": "2023-04-24T09:42:23Z",
+        "_id": "144c9332-6219-47cf-ae63-068996cf8f27",
+        "_rev": "bOAZZ17pVhEULXs1hkUk84",
+        "_type": "works",
+        "_updatedAt": "2023-04-24T09:42:23Z",
+        "codeLink": "https://github.com/asmraihan/ema_jhon_ecommerce",
+        "description": "E-Commerce website using react",
+        "imgUrl": {
+          "_type": "image",
+          "asset": {
+            "_ref": "https://i.ibb.co/QcMCfS0/emajhon.png",
+            "_type": "reference"
+          }
+        },
+        "projectLink": "https://ema-jhon-ecommerce.vercel.app/",
+        "tags": [
+          "Web App",
+          "React JS",
+          "All"
+        ],
+        "title": "Ema-Jhon Ecommerce"
+      },
+
+      {
         "_createdAt": "2023-04-24T09:42:23Z",
         "_id": "144c9332-6219-47cf-ae63-068996cf8f23",
         "_rev": "bOAZZ17pVhEULXs1hkUk84",
@@ -54,7 +125,7 @@
         "imgUrl": {
           "_type": "image",
           "asset": {
-            "_ref": "image-db53adca404b7410a2869db815e4ce77da2e7e53-1200x900-png",
+            "_ref": "https://i.ibb.co/cxs5DVj/markdownblog.png",
             "_type": "reference"
           }
         },
@@ -64,27 +135,5 @@
           "All"
         ],
         "title": "Dictionary app"
-      },
-      {
-        "_createdAt": "2023-04-24T09:42:23Z",
-        "_id": "144c9332-6219-47cf-ae63-068996cf8f27",
-        "_rev": "bOAZZ17pVhEULXs1hkUk84",
-        "_type": "works",
-        "_updatedAt": "2023-04-24T09:42:23Z",
-        "codeLink": "https://github.com",
-        "description": "Ema-Jon Ecommerce",
-        "imgUrl": {
-          "_type": "image",
-          "asset": {
-            "_ref": "image-db53adca404b7410a2869db815e4ce77da2e7e53-1200x900-png",
-            "_type": "reference"
-          }
-        },
-        "projectLink": "https://react-icons.github.io/react-icons/",
-        "tags": [
-          "UI/UX",
-          "All"
-        ],
-        "title": "Raihan UI/UX Design"
       }
 ]
