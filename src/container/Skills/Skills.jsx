@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { images } from '../../constants';
-import { easeInOut, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { AppWrap } from '../../wrapper';
 import { useTheme } from '../../constants/theme';
 import SphereModel from "../../components/Sphere";
-import TextSphere from '../../components/TextSphere';
+import TextSphere from "../../components/TextSphere";
 const Skills = () => {
     const { isTheme, toggleTheme } = useTheme();
     const [skills, setSkills] = useState([])
-    const [experiences, setExperiences] = useState([])
+    // const [experiences, setExperiences] = useState([])
 
     useEffect(() => {
         fetch('skills.json')
@@ -16,11 +15,11 @@ const Skills = () => {
             .then(data => setSkills(data))
     }, [])
 
-    useEffect(() => {
-        fetch('experiences.json')
-            .then(res => res.json())
-            .then(data => setExperiences(data))
-    }, [])
+    // useEffect(() => {
+    //     fetch('experiences.json')
+    //         .then(res => res.json())
+    //         .then(data => setExperiences(data))
+    // }, [])
 
     return (
         <div className='w-5/6 mx-auto relative flex flex-col justify-center items-center min-h-screen'>

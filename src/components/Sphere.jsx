@@ -1,10 +1,10 @@
-import { OrbitControls, Sphere } from "@react-three/drei";
-import { Canvas, useFrame, useLoader } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import { Canvas, useFrame } from "@react-three/fiber";
 import React, { useRef } from "react";
-import { TextureLoader } from "three";
+// import { TextureLoader } from "three";
 
 function Box(props) {
-  const texture = useLoader(TextureLoader, ('/textures/NormalMap.png'))
+  // const texture = useLoader(TextureLoader, ('/textures/NormalMap.png'))
   // This reference gives us direct access to the THREE.Mesh object
   const ref = useRef()
   useFrame((state, delta) => (ref.current.rotation.z += delta / 3) + (ref.current.rotation.x += delta / 3))
@@ -14,7 +14,7 @@ function Box(props) {
       <sphereGeometry args={[2, 20, 10]} />
       <meshStandardMaterial
         wireframe
-        roughness={0.2}
+        // roughness={0.2}
         metalness={0.7}
       // roughnessMap={texture}
       // normalMap={texture}

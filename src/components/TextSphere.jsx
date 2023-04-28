@@ -16,7 +16,6 @@ const TextSphere = () => {
         "Next",
         "NodeJS",
         "JSON",
-        "Jquery",
         "ES6",
         "VSCode",
         "REST API",
@@ -33,7 +32,7 @@ const TextSphere = () => {
     };
   }, []);
     return (
-        <span className="tagcloud w-full h-full absolute -top-36"></span>    
+        <div className="tagcloud w-full h-full absolute -top-36"></div>    
     );
 };
 
