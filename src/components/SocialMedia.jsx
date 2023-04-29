@@ -11,7 +11,7 @@ const SocialMedia = () => {
             <a href='https://twitter.com/AsmRaihan4' className={`text-2xl text-zinc-400 hover:text-black hover:dark:text-white transition-all duration-200 w-12 h-12 flex justify-center items-center bg-gray-500/5 rounded-lg hover:bg-gray-500/10 my-1`}>
                 <FaTwitter></FaTwitter>
             </a>
-            <a href='https://wa.me/01630490203' className={`text-2xl text-zinc-400 hover:text-black hover:dark:text-white transition-all duration-200 w-12 h-12 flex justify-center items-center bg-gray-500/5 rounded-lg hover:bg-gray-500/10 my-1`}>
+            <a href='https://wa.me/8801630490203' className={`text-2xl text-zinc-400 hover:text-black hover:dark:text-white transition-all duration-200 w-12 h-12 flex justify-center items-center bg-gray-500/5 rounded-lg hover:bg-gray-500/10 my-1`}>
                 <FaWhatsapp></FaWhatsapp>
             </a>
             <div

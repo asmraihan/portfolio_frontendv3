@@ -148,7 +148,7 @@ const Navbar = () => {
                                         <FaTwitter />
                                     </div>
                                 </a>
-                                <a href='https://wa.me/01630490203' target="_blank" rel="noreferrer">
+                                <a href='https://wa.me/8801630490203' target="_blank" rel="noreferrer">
                                     <div className={`text-2xl text-zinc-400 hover:text-black hover:dark:text-white transition-all duration-200 w-12 h-12 flex justify-center items-center bg-gray-500/5 rounded-lg hover:bg-gray-500/10`} >
                                         <FaWhatsapp />
                                     </div>
