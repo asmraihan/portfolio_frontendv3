@@ -4,6 +4,7 @@ import { AppWrap } from '../../wrapper';
 import { useTheme } from '../../constants/theme';
 import SphereModel from "../../components/Sphere";
 import TextSphere from "../../components/TextSphere";
+
 const Skills = () => {
     const { isTheme, toggleTheme } = useTheme();
     const [skills, setSkills] = useState([])
@@ -22,7 +23,7 @@ const Skills = () => {
     // }, [])
 
     return (
-        <div className='w-5/6 mx-auto relative flex flex-col justify-center items-center min-h-screen'>
+        <div className='w-5/6 mx-auto relative mt-8 flex flex-col justify-center items-center min-h-screen'>
             <h2 className='text-4xl font-bold text-center mb-16'>Skills & Tools</h2>
            <div className='lg:flex justify-center items-center '>
            <div className='lg:w-1/2 w-full mx-auto'>
@@ -47,10 +48,11 @@ const Skills = () => {
                 </motion.div>        
             </div>
 
-            <div className='proton w-1/2 h-[400px] relative hidden lg:block'>
+            <div className='proton w-full lg:w-1/2 lg:h-[400px] h-[300px] relative flex flex-col justify-center items-center  hidden lg:block'>
             <SphereModel></SphereModel>       
             <TextSphere >
             </TextSphere>
+ 
             </div>
            </div>
                            

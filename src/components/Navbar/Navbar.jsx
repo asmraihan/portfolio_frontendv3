@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from "framer-motion";
 import { Transition } from "@headlessui/react";
 import { useTheme } from '../../constants/theme';
-import { FaBars, FaCaretRight, FaEnvelope, FaFacebook, FaMoon, FaSun, FaTimes, FaWhatsapp } from 'react-icons/fa';
+import { FaBars, FaCaretRight, FaEnvelope, FaFacebook, FaMoon, FaSun, FaTimes, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 
 const Navbar = () => {
 
@@ -111,15 +111,17 @@ const Navbar = () => {
                         </div>
 
                         <div className="mt-8 space-y-2">
-                            <div className="flex items-center gap-2">
+                            <div className="flex items-center gap-2 mb-2">
                                 <p className={`text-xs font-medium uppercase ${isTheme === 'dark' ? 'dark:text-white/50' : 'text-black/50'}`}>Menu</p>
                                 <div className={`w-full h-0.5 ${isTheme === 'dark' ? 'bg-white/50' : 'bg-black/50'}`} />
                             </div>
                             {sections.map((section, index) => {
-                                return <a href={`#${section.id}`} key={index}>
+                                return <a href={`#${section.id}`} key={index} 
+                                onClick={()=>setActiveTab(section.id)}>
                                     <p
-                                        onClick={() => setIsOpen(false)}
-                                        className={`flex items-center gap-4 text-xl transition-all duration-200 ${activeTab === section.id ? 'bg-gray-500/5 text-black dark:text-white font-semibold' : 'hover:bg-gray-500/10 text-zinc-400 hover:text-black hover:dark:text-white'} px-4 py-3 rounded-lg`}
+                                        onClick={() => setIsOpen(false) }
+                                        
+                                        className={`flex items-center gap-4 text-xl transition-all duration-200 ${activeTab === section.id ? 'bg-gray-500/5 text-black dark:text-[#3D25FA] font-semibold' : ' text-gray-600'} ${isTheme === 'dark' ? 'dark:text-[#f5f5f5]' : 'text-[#050505]'} px-4 py-3 rounded-lg`}
                                     >
 
                                         <FaCaretRight></FaCaretRight>
@@ -136,20 +138,26 @@ const Navbar = () => {
                             </div>
                             <div className="flex items-center gap-2">
 
-                                <a href='/' target="_blank" rel="noreferrer">
+                                <a href='https://www.facebook.com/asmraihanbh/' target="_blank" rel="noreferrer">
                                     <div className={`text-2xl text-zinc-400 hover:text-black hover:dark:text-white transition-all duration-200 w-12 h-12 flex justify-center items-center bg-gray-500/5 rounded-lg hover:bg-gray-500/10`} >
                                         <FaFacebook />
                                     </div>
                                 </a>
-                                <a href='/' target="_blank" rel="noreferrer">
+                                <a href='https://twitter.com/AsmRaihan4' target="_blank" rel="noreferrer">
+                                    <div className={`text-2xl text-zinc-400 hover:text-black hover:dark:text-white transition-all duration-200 w-12 h-12 flex justify-center items-center bg-gray-500/5 rounded-lg hover:bg-gray-500/10`} >
+                                        <FaTwitter />
+                                    </div>
+                                </a>
+                                <a href='https://wa.me/01630490203' target="_blank" rel="noreferrer">
                                     <div className={`text-2xl text-zinc-400 hover:text-black hover:dark:text-white transition-all duration-200 w-12 h-12 flex justify-center items-center bg-gray-500/5 rounded-lg hover:bg-gray-500/10`} >
                                         <FaWhatsapp />
                                     </div>
                                 </a>
+                              
 
-                                <a href="/contact">
+                                <a href="mailto:asmraihanctg14@gmail.com">
                                     <div
-                                        onClick={() => setIsOpen(false)}
+                                   
                                         className="flex gap-2 px-4 items-center w-full h-12 bg-gray-500/5 rounded-lg hover:bg-gray-500/10 transition-all duration-200 text-zinc-400 hover:text-black hover:dark:text-white"
                                     >
                                         <FaEnvelope className='text-xl'></FaEnvelope>

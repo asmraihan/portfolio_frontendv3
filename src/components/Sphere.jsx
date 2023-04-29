@@ -29,7 +29,7 @@ function Box(props) {
 
 export default function App() {
   return (
-    <Canvas className="w-full h-full absolute -top-10 left-10">
+    <Canvas className="w-full h-full absolute lg:-top-10 lg:left-10">
       <ambientLight intensity={0.5} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
       <pointLight color="#39b5fb" position={[1.1, 1, -0.31]} intensity={6.8} />

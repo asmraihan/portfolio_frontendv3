@@ -57,14 +57,14 @@ const Work = () => {
                 <motion.div
                     animate={animateCard}
                     transition={{ duration: 0.5, delayChildren: 0.5 }}
-                    className='grid grid-cols-1 lg:grid-cols-4 gap-8 mt-4 min-h-[356px]'
+                    className='grid grid-cols-1 lg:grid-cols-4 gap-8 mt-4 min-h-[356px] '
                 >
 
                     {/* map here*/}
 
                     {filterWork.map((work, index) => (
-                         <div key={index} target="_blank" rel="noreferrer" className="cursor-pointer w-full bg-gray-500/5 p-4 rounded-lg transition-all duration-200 hover:bg-gray-500/10 ">
-                         <div className="h-36 w-full relative rounded-lg shadow-xl overflow-hidden">
+                         <div key={index} target="_blank" rel="noreferrer" className="cursor-pointer w-full bg-gray-500/5 p-4 rounded-lg transition-all duration-200 hover:bg-gray-500/10 max-w-[280px]">
+                         <div className="h-36 relative rounded-lg shadow-xl overflow-hidden">
                              <img src={work?.imgUrl?.asset?._ref} className="absolute w-full h-full object-cover " />
                              <motion.div
                                     whileHover={{ opacity: [0, 1] }}
