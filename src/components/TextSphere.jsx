@@ -1,8 +1,7 @@
 import React, { useLayoutEffect } from 'react';
 import TagCloud from "TagCloud";
+
 const TextSphere = () => {
-
-
   useLayoutEffect(() => {
     return () => {
       const container = ".tagcloud";

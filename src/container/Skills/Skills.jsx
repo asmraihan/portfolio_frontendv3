@@ -4,6 +4,8 @@ import { AppWrap } from '../../wrapper';
 import { useTheme } from '../../constants/theme';
 import SphereModel from "../../components/Sphere";
 import TextSphere from "../../components/TextSphere";
+import TagWords from '../../components/TagWords';
+
 
 const Skills = () => {
     const { isTheme, toggleTheme } = useTheme();
@@ -49,10 +51,10 @@ const Skills = () => {
             </div>
 
             <div className='proton w-full lg:w-1/2 lg:h-[400px] h-[300px] relative flex flex-col justify-center items-center  hidden lg:block'>
-            <SphereModel></SphereModel>       
+            {/* <SphereModel></SphereModel>       
             <TextSphere >
-            </TextSphere>
- 
+            </TextSphere> */}
+        <TagWords></TagWords>
             </div>
            </div>
                            
