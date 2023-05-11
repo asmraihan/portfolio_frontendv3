@@ -50,11 +50,11 @@ const Skills = () => {
                 </motion.div>        
             </div>
 
-            <div className='proton w-full lg:w-1/2 lg:h-[400px] h-[300px] relative flex flex-col justify-center items-center  hidden lg:block'>
-            {/* <SphereModel></SphereModel>       
+            <div className='w-full lg:w-1/2 lg:h-[400px] h-[300px] relative lg:flex flex-col justify-center items-center hidden'>
+            <SphereModel></SphereModel>       
             <TextSphere >
-            </TextSphere> */}
-        <TagWords></TagWords>
+            </TextSphere>
+        {/* <TagWords></TagWords> */}
             </div>
            </div>
                            
