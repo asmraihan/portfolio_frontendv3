@@ -37,7 +37,7 @@ const TextSphere = () => {
     };
   }, []);
   return (
-    <div className="tagcloud w-[100px] lg:w-full h-[100px] lg:h-full absolute -left-36 lg:left-0 lg:-top-36"></div>
+    <div className="tagcloud w-[100px] lg:w-full h-[100px] lg:h-full absolute -left-36 lg:left-0 lg:-top-36 z-40"></div>
   );
 };
 

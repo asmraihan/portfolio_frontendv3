@@ -4,6 +4,7 @@ import { easeInOut, motion } from 'framer-motion'
 import { AppWrap } from '../../wrapper';
 import { FaEye, FaGithub } from 'react-icons/fa';
 import { useTheme } from '../../constants/theme';
+import TextSphere from '../../components/TextSphere';
 
 const Work = () => {
     const { isTheme, toggleTheme } = useTheme();
@@ -108,6 +109,7 @@ const Work = () => {
                 {/* second card */}
 
             </div>
+            <TextSphere></TextSphere>
         </div>
     );
 };
