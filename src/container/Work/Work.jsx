@@ -41,12 +41,12 @@ const Work = () => {
             <h2 className='text-4xl font-bold text-center mt-10'>My Works</h2>
             <h4 className='text-2xl text-center mt-4 mb-8'><span>Things</span> <span>I've been working so far</span></h4>
 
-            <div className='app_work-filter flex justify-center gap-4 items-center flex-wrap m-4'>
+            <div className='flex justify-center gap-4 lg:gap-10 items-center flex-wrap my-4'>
                 {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
                     <div
                         key={index}
                         onClick={() => handleWorkFilter(item)}
-                        className={`app_work_filter_item py-2 px-4 rounded-md font-bold cursor-pointer transition-all duration-300 hover:bg-[#8825fa] hover:text-white flex text-lg ${activeFilter === item ? 'bg-primary text-white' : ''}`}>
+                        className={`app_work_filter_item py-2 px-4 rounded-md font-bold cursor-pointer transition-all duration-300 hover:bg-violet-500 hover:text-white flex ${activeFilter === item ? 'bg-blue-500 text-white' : ''}`}>
                         {item}
 
                     </div>
