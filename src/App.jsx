@@ -8,6 +8,9 @@ import Header from "./container/Header/Header"
 import Skills from "./container/Skills/Skills"
 import Work from "./container/Work/Work"
 import './index.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 function App() {
   return (

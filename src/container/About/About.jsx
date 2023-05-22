@@ -1,46 +1,42 @@
 import React from 'react';
 import { images } from '../../constants';
-import { motion } from 'framer-motion'
 import { AppWrap } from '../../wrapper';
 import { useTheme } from '../../constants/theme';
 
 const abouts = [
-    { title: 'Frontend Development', description: 'I am a full stack dev', imgUrl: images.about01 },
-    { title: 'Backend Development ', description: 'I am a full stack dev', imgUrl: images.about02 },
-    { title: 'Mobile App', description: 'I am a full stack dev', imgUrl: images.about03 },
-    { title: 'Web Application', description: 'I am a full stack dev', imgUrl: images.about04 },
+    { title: 'Frontend Development', description: 'React, NextJs, Tailwind, Material-UI', imgUrl: images.about01 },
+    { title: 'Backend Development ', description: 'NodeJS, ExpressJS, Firebase, Sanity, MongoDB ', imgUrl: images.about02 },
+    { title: 'Mobile App', description: 'React Native, Electron', imgUrl: images.about03 },
+    { title: 'Web Application', description: 'Git, Rest API', imgUrl: images.about04 },
 ]
 
 const About = () => {
     const { isTheme, toggleTheme } = useTheme();
     return (
         <div className='relative flex flex-col justify-center items-center min-h-screen '>
-            <h2 className='text-4xl font-bold text-center '>About me</h2>
+            <h2 data-aos="zoom-in-up" className='text-4xl font-bold text-center '>About me</h2>
             <div className='app px-5 profile mx-auto flex justify-center items-start grid grid-cols-1 lg:grid-cols-2 gap-12 mt-20'>
                 {
                     abouts.map((about, index) => (
-                        <motion.div
-                            whileInView={{ opacity: 1 }}
-                            whileHover={{ scale: 1.1 }}
-                            transition={{ duration: 0.2, type: 'tween' }}
-                            className={`flip-effect ${isTheme === 'dark' ? 'dark:bg-[#0F1011]' : 'bg-gray-500/5'}   flex justify-between p-4 rounded-lg gap-4`}
+                        <div
+                            data-aos="fade-up"
+                            className={`flip-effect ${isTheme === 'dark' ? 'dark:bg-[#0F1011]' : 'bg-gray-500/5'}   flex justify-between p-4 rounded-lg gap-4 w-[480px]`}
                             key={index}
                         >
-                            <div>
+                            <div className='w-1/2'>
                                 <h2 className='font-bold mt-5'>{about.title}</h2>
-                                <p className='text-sm text-gray-500 mt-2'>{about.description}</p>
+                                <p className='text-sm text-gray-500 mt-2 whitespace-pre-wrap'>{about.description}</p>
                             </div>
 
                             <img src={about.imgUrl} alt={about.title}
                                 className='max-w-[238px] h-fit overflow-clip rounded-xl object-cover' />
-                        </motion.div>
+                        </div>
                     ))
                 }
             </div>
 
-
-            <div className="w-5/6 mx-auto">
-                <div className="flex flex-col lg:flex-row justify-between items-center w-full h-full py-24 gap-24">
+            <div data-aos="fade-up" className="w-5/6 lg:w-full lg:max-w-6xl mx-auto">
+                <div className="flex flex-col lg:flex-row justify-between items-center py-24 gap-24">
                     <div>
                         <h1 className="text-4xl font-bold mb-3">Who Am <span className="relative whitespace-nowrap text-primary">I</span>?</h1>
                         <p className="text-xl mt-1">

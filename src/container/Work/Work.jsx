@@ -37,11 +37,11 @@ const Work = () => {
         }, 500);
     }
     return (
-        <div className=' w-5/6 relative flex flex-col justify-center items-center min-h-screen'>
-            <h2 className='text-4xl font-bold text-center mt-10'>My Works</h2>
-            <h4 className='text-2xl text-center mt-4 mb-8'><span>Things</span> <span>I've been working so far</span></h4>
+        <div className='w-5/6 relative flex flex-col justify-center items-center min-h-screen'>
+            <h2  data-aos="zoom-in" className='text-4xl font-bold text-center mt-10'>My Works</h2>
+            <h4  data-aos="zoom-in" className='text-2xl text-center mt-4 mb-8'><span>Things</span> <span>I've been working so far</span></h4>
 
-            <div className='flex justify-center gap-4 lg:gap-10 items-center flex-wrap my-4'>
+            <div data-aos="zoom-in-up" className='flex justify-center gap-4 lg:gap-10 items-center flex-wrap my-4'>
                 {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
                     <div
                         key={index}
@@ -63,7 +63,7 @@ const Work = () => {
                     {/* map here*/}
 
                     {filterWork.map((work, index) => (
-                         <div key={index} target="_blank" rel="noreferrer" className="cursor-pointer w-full bg-gray-500/5 p-4 rounded-lg transition-all duration-200 hover:bg-gray-500/10 max-w-[280px]">
+                         <div data-aos="fade-up" key={index} target="_blank" rel="noreferrer" className="cursor-pointer w-full bg-gray-500/5 p-4 rounded-lg transition-all duration-200 hover:bg-gray-500/10 max-w-[280px]">
                          <div className="h-36 relative rounded-lg shadow-xl overflow-hidden">
                              <img src={work?.imgUrl?.asset?._ref} className="absolute w-full h-full object-cover " />
                              <motion.div
