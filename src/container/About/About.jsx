@@ -4,8 +4,8 @@ import { AppWrap } from '../../wrapper';
 import { useTheme } from '../../constants/theme';
 
 const abouts = [
-    { title: 'Frontend Development', description: 'React, NextJs, Tailwind, Material-UI', imgUrl: images.about01 },
-    { title: 'Backend Development ', description: 'NodeJS, ExpressJS, Firebase, MongoDB ', imgUrl: images.about02 },
+    { title: 'Frontend', description: 'React, Tailwind, Material-UI', imgUrl: images.about01 },
+    { title: 'Backend', description: 'ExpressJS, MongoDB', imgUrl: images.about02 },
     { title: 'Mobile App', description: 'React Native, Electron', imgUrl: images.about03 },
     { title: 'Web Application', description: 'Git, Rest API', imgUrl: images.about04 },
 ]
@@ -20,7 +20,7 @@ const About = () => {
                     abouts.map((about, index) => (
                         <div
                             data-aos="fade-up"
-                            className={`flip-effect ${isTheme === 'dark' ? 'dark:bg-[#0F1011]' : 'bg-gray-500/5'}   flex justify-between p-4 rounded-lg gap-4 w-[400px] lg:w-[480px] mx-auto`}
+                            className={`flip-effect ${isTheme === 'dark' ? 'dark:bg-[#0F1011]' : 'bg-gray-500/5'}   flex justify-between p-4 rounded-lg gap-4 w-11/12 lg:w-[480px] mx-auto`}
                             key={index}
                         >
                             <div className='w-1/2'>
