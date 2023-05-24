@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@frank-mayer/react-tag-cloud": "^1.2.1",
     "@headlessui/react": "^1.7.14",
     "@react-three/drei": "^9.65.5",
     "@react-three/fiber": "^8.12.2",

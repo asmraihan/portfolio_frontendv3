@@ -4,7 +4,8 @@ import { AppWrap } from '../../wrapper';
 import { useTheme } from '../../constants/theme';
 import SphereModel from "../../components/Sphere";
 import TextSphere from "../../components/TextSphere";
-import TagWords from '../../components/TagWords';
+import TextCloud from '../../components/TagCloud';
+
 
 
 const Skills = () => {
@@ -52,9 +53,9 @@ const Skills = () => {
 
             <div className='w-full lg:w-1/2 lg:h-[400px] h-[300px] relative lg:flex flex-col justify-center items-center hidden'>
             <SphereModel></SphereModel>       
-            <TextSphere >
-            </TextSphere>
-        {/* <TagWords></TagWords> */}
+            {/* <TextSphere >
+            </TextSphere> */}
+            <TextCloud></TextCloud>
             </div>
            </div>
                            

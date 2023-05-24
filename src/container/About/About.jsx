@@ -15,7 +15,7 @@ const About = () => {
     return (
         <div className='relative flex flex-col justify-center items-center min-h-screen '>
             <h2 data-aos="zoom-in-up" className='text-4xl font-bold text-center'>About me</h2>
-            <div className='app px-5 profile mx-auto flex justify-center items-start grid grid-cols-1 lg:grid-cols-2 gap-12 mt-20'>
+            <div className='app px-5 profile mx-auto flex justify-center items-start grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 mt-20'>
                 {
                     abouts.map((about, index) => (
                         <div
