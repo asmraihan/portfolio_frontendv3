@@ -10,7 +10,7 @@ const TextCloud = () => (
         })}
         // onClick={(tag, ev) => alert(tag)}
         onClickOptions={{ passive: true }}
-        className="w-[100px] lg:w-full h-[100px] lg:h-full absolute -left-36 lg:left-0 lg:-top-36 z-40"
+        className="w-[100px] lg:w-full h-[100px] lg:h-full absolute -left-36 lg:left-0 lg:-top-28 z-40"
     >
         {[
                "HTML",
