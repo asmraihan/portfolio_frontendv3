@@ -48,7 +48,7 @@ const About = () => {
 
                     </div>
                     <div className="relative flex-shrink-0 hover:animate-pulse">
-                        <img src={`${isTheme === 'dark' ? 'https://i.ibb.co/ZxMqQ6F/medark.jpg' : 'https://i.ibb.co/5TXbyFK/melight.jpg'}`} style={{ zIndex: 1 }} className="relative shadow-xl z-1 w-full lg:w-64 h-full lg:h-64 rounded-full lg:rounded-lg" />
+                        <img src={`${isTheme === 'dark' ? 'https://i.ibb.co/ZxMqQ6F/medark.jpg' : 'https://i.ibb.co/thwbhK7/melight.jpg'}`} style={{ zIndex: 1 }} className="relative shadow-xl z-1 w-full lg:w-64 h-full lg:h-64 rounded-full lg:rounded-lg" />
                         <div className="absolute w-full h-full top-1 -right-1 border-4 rounded-full lg:rounded-lg" />
                     </div>
                 </div>
