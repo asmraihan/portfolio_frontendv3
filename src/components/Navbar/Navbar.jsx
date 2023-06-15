@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from "framer-motion";
 import { Transition } from "@headlessui/react";
 import { useTheme } from '../../constants/theme';
-import { FaBars, FaCaretRight, FaEnvelope, FaFacebook, FaMoon, FaSun, FaTimes, FaTwitter, FaWhatsapp } from 'react-icons/fa';
+import { FaBars, FaCaretRight, FaEnvelope, FaFacebook, FaLinkedin, FaMoon, FaSun, FaTimes, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 
 const Navbar = () => {
 
@@ -138,14 +138,14 @@ const Navbar = () => {
                             </div>
                             <div className="flex items-center gap-2">
 
-                                <a href='https://www.facebook.com/asmraihanbh/' target="_blank" rel="noreferrer">
+                                {/* <a href='https://www.facebook.com/asmraihanbh/' target="_blank" rel="noreferrer">
                                     <div className={`text-2xl text-zinc-400 hover:text-black hover:dark:text-white transition-all duration-200 w-12 h-12 flex justify-center items-center bg-gray-500/5 rounded-lg hover:bg-gray-500/10`} >
                                         <FaFacebook />
                                     </div>
-                                </a>
-                                <a href='https://twitter.com/AsmRaihan4' target="_blank" rel="noreferrer">
+                                </a> */}
+                                <a href='https://www.linkedin.com/in/asmraihan/' target="_blank" rel="noreferrer">
                                     <div className={`text-2xl text-zinc-400 hover:text-black hover:dark:text-white transition-all duration-200 w-12 h-12 flex justify-center items-center bg-gray-500/5 rounded-lg hover:bg-gray-500/10`} >
-                                        <FaTwitter />
+                                        <FaLinkedin />
                                     </div>
                                 </a>
                                 <a href='https://wa.me/8801630490203' target="_blank" rel="noreferrer">
@@ -161,7 +161,7 @@ const Navbar = () => {
                                         className="flex gap-2 px-4 items-center w-full h-12 bg-gray-500/5 rounded-lg hover:bg-gray-500/10 transition-all duration-200 text-zinc-400 hover:text-black hover:dark:text-white"
                                     >
                                         <FaEnvelope className='text-xl'></FaEnvelope>
-                                        <p>Contact</p>
+                                        <p>Mail</p>
                                     </div>
                                 </a>
                             </div>

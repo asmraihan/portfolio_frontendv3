@@ -3,28 +3,36 @@ import { easeInOut, motion } from 'framer-motion';
 import { images } from '../../constants/index'
 import AppWrap from '../../wrapper/AppWrap';
 import { useTheme } from '../../constants/theme';
-import { FaDownload } from 'react-icons/fa';
-// import SphereModel from "../../components/Sphere";
+import { FaDownload, FaLocationArrow, FaSignInAlt } from 'react-icons/fa';
 
-// const scaleVariants = {
-//     whileInView: {
-//         scale: [0, 1],
-//         opacity: [0, 1],
-//         transition: {
 
-//             duration: 1.5,
-//             ease: easeInOut
-//         }
-//     }
-// }
+const PreviewAnimation = {
+    initial: {
+      y:30,
+      opacity: 0,
+      scale: 0.9
+    },
+    animate: {
+      y:0,
+      opacity: 1,
+      scale: 1,
+      transition: {
+        ease: [0.6, 0.01, 0.05, 0.95],
+        duration: 0.8,
+      }
+    }
+  }
+
+
+
 const Header = () => {
     const { isTheme, toggleTheme } = useTheme();
     return (
         <div className="lg:flex justify-center items-center relative min-h-screen">
             <motion.div
-                animate={{ x: [0, 50] }}
-                whileInView={{ opacity: [0, 1] }}
-                transition={{ duration: 2, ease: 'easeInOut' }}
+                    initial="initial"
+                    whileInView="animate"
+                    variants={PreviewAnimation}
                 className=' absolute -left-12 -z-10 w-full h-[90%]'
             >
                 <div className='header badge absolute top-16 z-50'>
@@ -36,8 +44,9 @@ const Header = () => {
                 </div>
             </motion.div>
             <motion.div
-                whileInView={{ opacity: [0, 1] }}
-                transition={{ duration: 0.5, delayChildren: 0.5 }}
+                     initial="initial"
+          whileInView="animate"
+          variants={PreviewAnimation}
                 className='header img relative object-contain z-10'>
                 {/* <img src={images.profile} alt="profile" /> */}
                 <div className="h-[40rem] flex flex-col justify-center items-center ">
@@ -46,23 +55,24 @@ const Header = () => {
                         A full-stack developer
                     </p>
 
-                    <div className="w-5/6 lg:w-auto grid grid-cols-1 lg:grid-cols-4 gap-4 lg:mt-24 mt-16">
-                        <div className="rounded-lg border-2 border-gray-500/20 border-dotted px-4 py-2 text-center">
-                            <span className="text-primary uppercase">Technologies</span>
+                    <div className="w-5/6 cursor-pointer lg:w-auto grid grid-cols-1 lg:grid-cols-4 gap-4 lg:mt-24 mt-16">
+                        <div className="scale-100 hover:scale-105 duration-300 transition-all hover:border-dashed rounded-lg border-2 border-gray-500/20 border-dotted px-4 py-2 text-center">
+                            <span className="text-primary uppercase ">Technologies</span>
                             <p className="text-gray-500 font-semibold text-xl">30+</p>
                         </div>
-                        <div className="rounded-lg border-2 border-gray-500/20 border-dotted px-4 py-2 text-center">
+                        <div className="scale-100 hover:scale-105 duration-300 transition-all hover:border-dashed  rounded-lg border-2 border-gray-500/20 border-dotted px-4 py-2 text-center">
                             <span className="text-primary uppercase">Years of Experience</span>
                             <p className="text-gray-500 font-semibold text-xl">1year+</p>
                         </div>
-                        <div className="rounded-lg border-2 border-gray-500/20 border-dotted px-4 py-2 text-center">
+                        <div className="scale-100 hover:scale-105 duration-300 transition-all hover:border-dashed  rounded-lg border-2 border-gray-500/20 border-dotted px-4 py-2 text-center">
                             <span className="text-primary uppercase">Completed Projects</span>
                             <p className="text-gray-500 font-semibold text-xl">15+</p>
                         </div>
-                        <div className="rounded-lg border-2 border-gray-500/20 border-dotted px-4 py-2 text-center">
-                            <span className="text-primary uppercase">Download</span>
-                            <p className="text-gray-500 font-semibold text-xl">CV <FaDownload className='inline-block text-sm mb-1'></FaDownload></p>
-                        </div>
+                        <a href='https://drive.google.com/file/d/1pCpZ2Q50oOEMN0e5LUY5Hi_IxgVkI3EO/view?usp=drive_link' className="scale-100 hover:scale-105 duration-300 transition-all hover:border-dashed  rounded-lg border-2 border-gray-500/20 border-dotted px-4 py-2 text-center">
+                            <p className="text-primary uppercase">Resume</p>
+                            {/* <p className="text-gray-500 font-semibold text-xl mr-4"> </p> Resume  */}
+                            <FaSignInAlt className='inline-block text-sm mb-1'></FaSignInAlt>
+                        </a>
                     </div>
                 </div>
                 {/* <motion.img
@@ -85,13 +95,10 @@ const Header = () => {
             </motion.div>
 
             <motion.div
-                animate={{ x: [0, 50], y: [0, -50] } }
-                whileInView={{ opacity: [0, 1] }}
-                transition={{ duration: 2, ease: 'easeInOut' }}
-
-                // variants={scaleVariants}
-                // whileInView={scaleVariants.whileInView}
-                className='absolute right-0 top-24 h-full'>
+                 initial="initial"
+                 whileInView="animate"
+                 variants={PreviewAnimation}
+                className='absolute -right-14 top-6 h-full'>
                 <div className='hidden lg:block w-24 -ml-64 mt-16 absolute rounded-full shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]'>
                     <img className='p-3' src={images.node} alt="circle" />
                 </div>
