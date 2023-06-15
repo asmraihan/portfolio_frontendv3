@@ -42,7 +42,8 @@ const Work = () => {
             <h4  data-aos="zoom-in" className='text-2xl text-center mt-4 mb-8'><span>Things</span> <span>I've been working so far</span></h4>
 
             <div data-aos="zoom-in-up" className='flex justify-center gap-4 lg:gap-10 items-center flex-wrap my-4'>
-                {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
+                {/* {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => ( */}
+                {['JavaScript', 'React JS', 'Full-Stack', 'React Native', 'All'].map((item, index) => (
                     <div
                         key={index}
                         onClick={() => handleWorkFilter(item)}

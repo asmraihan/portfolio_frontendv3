@@ -24,21 +24,21 @@ const SocialMedia = () => {
                 <a   href='https://www.linkedin.com/in/asmraihan/' 
                     className="flex flex-row gap-2 px-4 items-center h-12 bg-gray-500/5 rounded-lg hover:bg-gray-500/10 transition-all duration-200 text-zinc-400 hover:text-black hover:dark:text-white absolute top-[36px] -left-24 hover:left-0 group"
                 >
-                    <p className='w-full mr-14'>Contact</p>
+                    <p className='w-full mr-10 text-sm whitespace-nowrap'>Contact me</p>
                     <FaLinkedin className='text-xl ml-24 absolute h-12 transition-all duration-200 text-zinc-400 hover:text-black group-hover:dark:text-white '></FaLinkedin>
 
                 </a>
                 <a   href='https://wa.me/8801630490203'
                     className="flex flex-row gap-2 px-4 items-center h-12 bg-gray-500/5 rounded-lg hover:bg-gray-500/10 transition-all duration-200 text-zinc-400 hover:text-black hover:dark:text-white absolute top-[88px] -left-24 hover:left-0 group"
                 >
-                    <p className='w-full mr-14'>Contact</p>
+                    <p className='w-full mr-10 text-sm whitespace-nowrap'>Contact me</p>
                     <FaWhatsapp className='text-xl ml-24 absolute h-12 transition-all duration-200 text-zinc-400 hover:text-black group-hover:dark:text-white '></FaWhatsapp>
 
                 </a>
                 <a href="mailto:asmraihanctg14@gmail.com"
                     className="flex flex-row gap-2 px-4 items-center h-12 bg-gray-500/5 rounded-lg hover:bg-gray-500/10 transition-all duration-200 text-zinc-400 hover:text-black hover:dark:text-white absolute top-[140px] -left-24 hover:left-0 group"
                 >
-                    <p className='w-full mr-14'>Contact</p>
+                    <p className='w-full mr-10 text-sm whitespace-nowrap'>Contact me</p>
                     <FaEnvelope className='text-xl ml-24 absolute h-12 transition-all duration-200 text-zinc-400 hover:text-black group-hover:dark:text-white '></FaEnvelope>
 
                 </a>

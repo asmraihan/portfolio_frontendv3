@@ -2,13 +2,26 @@ import React from 'react';
 import { images } from '../../constants';
 import { AppWrap } from '../../wrapper';
 import { useTheme } from '../../constants/theme';
-
+import { easeInOut, motion } from 'framer-motion';
 const abouts = [
     { title: 'Frontend', description: 'React, Tailwind, Material-UI', imgUrl: images.about01 },
     { title: 'Backend', description: 'ExpressJS, MongoDB', imgUrl: images.about02 },
     { title: 'Mobile App', description: 'React Native, Electron', imgUrl: images.about03 },
     { title: 'Web Application', description: 'Git, Rest API', imgUrl: images.about04 },
 ]
+const PreviewAnimation = {
+    initial: {
+      opacity: 0,
+     
+    },
+    animate: {
+      opacity: 1,
+      transition: {
+        ease: [0.6, 0.01, 0.05, 0.95],
+        duration: 0.8,
+      }
+    }
+  }
 
 const About = () => {
     const { isTheme, toggleTheme } = useTheme();
@@ -18,8 +31,11 @@ const About = () => {
             <div className='app px-5 profile mx-auto flex justify-center items-start grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 mt-20'>
                 {
                     abouts.map((about, index) => (
-                        <div
-                            data-aos="fade-up"
+
+                        <motion.div
+                        initial="initial"
+                        whileInView="animate"
+                        variants={PreviewAnimation}  
                             className={`flip-effect ${isTheme === 'dark' ? 'dark:bg-[#0F1011]' : 'bg-gray-500/5'}   flex justify-between p-4 rounded-lg gap-4 w-11/12 lg:w-[480px] mx-auto`}
                             key={index}
                         >
@@ -30,7 +46,7 @@ const About = () => {
 
                             <img src={about.imgUrl} alt={about.title}
                                 className='w-1/2 lg:h-fit overflow-clip rounded-xl object-cover' />
-                        </div>
+                        </motion.div>
                     ))
                 }
             </div>
