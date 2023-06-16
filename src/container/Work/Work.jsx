@@ -82,7 +82,7 @@ const Work = () => {
                                             <FaEye></FaEye>
                                         </motion.div>
                                     </a>
-                                    <a href={work.codeLink}>
+                                    <a href={work.codeLink} target=' blank'>
                                         <motion.div
                                             whileInView={{ scale: [0, 1] }}
                                             whileHover={{ scale: [1, 0.9] }}
@@ -95,14 +95,14 @@ const Work = () => {
                                 </motion.div>
                          </div>
                          <div className="mt-4">
-                             <p className="text-xl font-semibold">{work.title}</p>
-                             <p className="text-sm max-h-10 h-10 overflow-auto font-normal text-gray-500">{work.description}</p>
+                             <p className="text-xl font-semibold mb-1">{work.title}</p>
+                             <p className="text-sm max-h-16 h-16 overflow-auto font-normal text-gray-500">{work.description}</p>
                              
                          </div>
                          <div className='app_work_tag'>
                                     <p className='text-xs text-center px-3 py-1.5 rounded mt-4'>#{work.tags[0]}</p>
                                 </div>
-                         <p className="text-xs italic mt-6"><i className="fal fa-globe mr-1" />{work.projectLink}</p>
+                         <p className="text-xs italic mt-2 overflow-hidden whitespace-nowrap"><i className="fal fa-globe mr-1" />{work.projectLink}</p>
                      </div>                
                     ))}
                 </motion.div>

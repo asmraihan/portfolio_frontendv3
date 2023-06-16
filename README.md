@@ -13,7 +13,7 @@
 
 ## Built With
 
-<a href="https://asmraihan.web.app/" target="_blank">raihan.me</a><a href="https://asmraihan.vercel.app/" target="_blank">(vercel)</a> features some of my github projects as well as my resume and technical skills.<br/>
+<a href="https://asmraihan.web.app/" target="_blank">raihan.me</a><a href="https://asmraihan.vercel.app/" target="_blank"> (or vercel)</a> features some of my github projects as well as my resume and technical skills.<br/>
 
 This project was built using these technologies.
 
