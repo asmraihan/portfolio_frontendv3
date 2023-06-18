@@ -1,5 +1,26 @@
 [
- 
+  {
+    "_createdAt": "2023-04-24T09:42:23Z",
+    "_id": "144c9332-6219-47cf-ae63-068996cf8f23",
+    "_rev": "bOAZZ17pVhEULXs1hkUk84",
+    "_type": "works",
+    "_updatedAt": "2023-04-24T09:42:23Z",
+    "codeLink": "https://github.com",
+    "description": "Lexical IELTS is a solution for IELTS vocabulary built With React Native",
+    "imgUrl": {
+      "_type": "image",
+      "asset": {
+        "_ref": "https://i.ibb.co/LzFm6Qr/lexical-vocab.jpg",
+        "_type": "reference"
+      }
+    },
+    "projectLink": "https://expo.dev/@asmraihan/react_native_dictionary",
+    "tags": [
+      "React Native",
+      "All"
+    ],
+    "title": "Dictionary app"
+  },
   {
     "_createdAt": "2023-04-24T09:42:23Z",
     "_id": "144c9332-6219-47cf-ae63-068996cf8f27",
@@ -254,7 +275,7 @@
     "imgUrl": {
       "_type": "image",
       "asset": {
-        "_ref": "https://i.ibb.co/7bvCwm5/smartgadget.png",
+        "_ref": "https://i.ibb.co/kDg0xWP/smartgadget-Small.png",
         "_type": "reference"
       }
     },
@@ -277,7 +298,7 @@
     "imgUrl": {
       "_type": "image",
       "asset": {
-        "_ref": "https://i.ibb.co/PF1GXFN/nextpage.png",
+        "_ref": "https://i.ibb.co/CJpx8SV/nextpage-Small.png",
         "_type": "reference"
       }
     },
@@ -300,7 +321,7 @@
     "imgUrl": {
       "_type": "image",
       "asset": {
-        "_ref": "https://i.ibb.co/NCvDbbh/moviemarathon.png",
+        "_ref": "https://i.ibb.co/yYDJjZL/moviemarathon-Small.png",
         "_type": "reference"
       }
     },
@@ -520,7 +541,7 @@
     "imgUrl": {
       "_type": "image",
       "asset": {
-        "_ref": "https://i.ibb.co/svR2wQb/texteditor.png",
+        "_ref": "https://i.ibb.co/y6BrC7B/texteditor-Small.png",
         "_type": "reference"
       }
     },
@@ -553,28 +574,7 @@
     ],
     "title": "Legal solution"
   },
-  {
-    "_createdAt": "2023-04-24T09:42:23Z",
-    "_id": "144c9332-6219-47cf-ae63-068996cf8f23",
-    "_rev": "bOAZZ17pVhEULXs1hkUk84",
-    "_type": "works",
-    "_updatedAt": "2023-04-24T09:42:23Z",
-    "codeLink": "https://github.com",
-    "description": "IELTS Vocabulary With React Native",
-    "imgUrl": {
-      "_type": "image",
-      "asset": {
-        "_ref": "https://i.ibb.co/cxs5DVj/markdownblog.png",
-        "_type": "reference"
-      }
-    },
-    "projectLink": "https://react-icons.github.io/react-icons/",
-    "tags": [
-      "Mobile App",
-      "All"
-    ],
-    "title": "Dictionary app"
-  },
+ 
 
   {
     "_createdAt": "2023-04-24T09:42:23Z",

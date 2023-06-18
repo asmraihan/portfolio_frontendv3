@@ -32,7 +32,20 @@ const Header = () => {
             <motion.div
                     initial="initial"
                     whileInView="animate"
-                    variants={PreviewAnimation}
+                    variants={{
+                        initial: {
+                          opacity: 0,
+                          scale: 0.9
+                        },
+                        animate: {
+                          opacity: 1,
+                          scale: 1,
+                          transition: {
+                            ease: [0.6, 0.01, 0.05, 0.95],
+                            duration: 0.8,
+                          }
+                        }
+                      }}
                 className=' absolute -left-12 -z-10 w-full h-[90%]'
             >
                 <div className='header badge absolute top-16 z-50'>
@@ -97,7 +110,20 @@ const Header = () => {
             <motion.div
                  initial="initial"
                  whileInView="animate"
-                 variants={PreviewAnimation}
+                 variants={{
+                    initial: {
+                      opacity: 0,
+                      scale: 0.9
+                    },
+                    animate: {  
+                      opacity: 1,
+                      scale: 1,
+                      transition: {
+                        ease: [0.6, 0.01, 0.05, 0.95],
+                        duration: 0.8,
+                      }
+                    }
+                  }}
                 className='absolute -right-14 top-6 h-full'>
                 <div className='hidden lg:block w-24 -ml-64 mt-16 absolute rounded-full shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]'>
                     <img className='p-3' src={images.node} alt="circle" />
