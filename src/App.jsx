@@ -10,22 +10,25 @@ import Work from "./container/Work/Work"
 import './index.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Repos } from "./Repos/Repos"
 AOS.init();
 
 function App() {
   return (
-      <ThemeProvider>
-        <Navbar></Navbar>
-        <ScrollIndicator></ScrollIndicator>
-        <Header></Header>
-        <About></About>
-        <Work></Work>
-        <Skills></Skills>
-        <Contact></Contact>
-        <Footer></Footer>
-        <div className="color-layout layout-purple position-right-top" />
-        <div className="color-layout layout-blue position-left-bottom" />
-      </ThemeProvider>
+    <ThemeProvider>
+      <Navbar></Navbar>
+      <ScrollIndicator></ScrollIndicator>
+      <Header></Header>
+      <About></About>
+      <Work></Work>
+      {/* <Repositories /> */}
+      <Repos></Repos>
+      <Skills></Skills>
+      <Contact></Contact>
+      <Footer></Footer>
+      <div className="color-layout layout-purple position-right-top" />
+      <div className="color-layout layout-blue position-left-bottom" />
+    </ThemeProvider>
   )
 }
 
