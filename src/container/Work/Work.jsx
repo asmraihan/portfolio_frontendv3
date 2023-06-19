@@ -12,10 +12,10 @@ const Work = () => {
     const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 })
     const [works, setWorks] = useState([])
     const [filterWork, setFilterWork] = useState([])
-
+    const [sliceNumber, setSliceNumber] = useState(8)
     // make a function that inititally will be only 12 data and add 6 more works everytime the user click the button show more
     const handleShowMore = () => {
-        console.log('show more')
+        setSliceNumber(sliceNumber + 4)
     }
 
 
@@ -69,7 +69,7 @@ const Work = () => {
 
                     {/* map here*/}
 
-                    {filterWork.map((work, index) => (
+                    {filterWork.slice(0, sliceNumber).map((work, index) => (
                         <div data-aos="fade-up" key={index} target="_blank" rel="noreferrer" className="cursor-pointer w-full bg-gray-500/5 p-4 rounded-lg transition-all duration-200 hover:bg-gray-500/10 max-w-[300px] lg:max-w-[280px]">
                             <div className="h-36 relative rounded-lg shadow-xl overflow-hidden">
                                 <img src={work?.imgUrl?.asset?._ref} className="absolute w-full h-full object-cover " />
@@ -115,10 +115,10 @@ const Work = () => {
                 {/* second card */}
 
             </div>
-            {/* {
-                filterWork.length > 12 &&
-                <button onClick={() => handleShowMore()} className={`px-4 h-12 bg-gray-500/5 rounded-lg hover:bg-gray-500/10 transition-all duration-200  ${isTheme === 'dark' ? 'text-white  hover:text-gray-200' : 'text-black hover:text-gray-800'}   mt-4`}>Show more</button>
-            } */}
+            {
+                filterWork.length > 8 && filterWork.length > sliceNumber &&
+                <button onClick={() => handleShowMore()} className={`px-4 h-12 bg-gray-500/5 rounded-lg hover:bg-gray-500/10 transition-all duration-200 font-semibold border-2 border-primary ${isTheme === 'dark' ? 'text-white  hover:text-gray-200' : 'text-black hover:text-gray-800'}   mt-4`}>Show more</button>
+            }
 
 
 
