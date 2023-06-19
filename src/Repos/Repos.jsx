@@ -108,12 +108,7 @@ export function Repos() {
         fetch("https://api.github.com/users/asmraihan/repos")
             .then((response) => response.json())
             .then((data) => {
-                setTestimonials(
-                    data.filter((d) => d.fork === false)
-                        .sort((a, b) => {
-                            return b.created_at - a.created_at;
-                        })
-                );
+                setTestimonials(data);
             })
             .finally(() => setLoading(false));
     };
@@ -121,14 +116,14 @@ export function Repos() {
     useEffect(() => {
         getRepositories();
     }, []);
-  
+
     return (
         <section
             ref={ref}
             tabIndex="-1"
             className="relative max-w-7xl mx-auto px-4 focus:outline-none sm:px-3 md:px-5 my-20"
         >
-           <h2 data-aos="zoom-in" className='text-3xl lg:text-4xl font-bold text-center mt-10'>GitHub Repos</h2>
+            <h2 data-aos="zoom-in" className='text-3xl lg:text-4xl font-bold text-center mt-10'>GitHub Repos</h2>
             <h4 data-aos="zoom-in" className='text-xl lg:text-2xl text-center mt-4 mb-8'><span>Things</span> <span>I've been working so far</span></h4>
             <div
                 ref={inViewRef}
@@ -137,8 +132,9 @@ export function Repos() {
                     !expanded && 'max-h-[24rem] overflow-hidden'
                 )}
             >
-                {/* {testimonials?.sort((a, b) => b.stargazers_count - a.stargazers_count).map((column) => ( */}
-                {testimonials?.map((column) => (
+                {/* sort github repos by last modified date */}
+                {testimonials?.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at)).map((column) => (
+
                     <Testimonial key={column.name} expanded={expanded} {...column} />
                 ))}
             </div>
