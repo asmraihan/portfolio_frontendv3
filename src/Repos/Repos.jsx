@@ -151,8 +151,8 @@ export function Repos() {
             tabIndex="-1"
             className="relative max-w-7xl mx-auto px-4 focus:outline-none sm:px-3 md:px-5 my-20"
         >
-           <h2 data-aos="zoom-in" className='text-4xl font-bold text-center mt-10'>GitHub Repos</h2>
-            <h4 data-aos="zoom-in" className='text-2xl text-center mt-4 mb-8'><span>Things</span> <span>I've been working so far</span></h4>
+           <h2 data-aos="zoom-in" className='text-3xl lg:text-4xl font-bold text-center mt-10'>GitHub Repos</h2>
+            <h4 data-aos="zoom-in" className='text-xl lg:text-2xl text-center mt-4 mb-8'><span>Things</span> <span>I've been working so far</span></h4>
             <div
                 ref={inViewRef}
                 className={clsx(
@@ -166,8 +166,8 @@ export function Repos() {
             </div>
             <div
                 className={clsx(
-                    'inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-white pt-32 pb-8 pointer-events-none dark:from-neutral-900/0',
-                    expanded ? 'sticky -mt-56 lg:-mt-52' : 'absolute -bottom-[80px] lg:-bottom-[100px]',
+                    'inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-white pb-20 lg:pb-16 pointer-events-none dark:from-neutral-900/0',
+                    expanded ? 'sticky -mt-56 lg:-mt-52' : 'absolute -bottom-[120px] lg:-bottom-[120px]',
                     transition && 'transition-opacity duration-300',
                     expanded && (showCollapseButton ? 'opacity-100 animate-pulse' : 'opacity-0')
                 )}
@@ -175,7 +175,7 @@ export function Repos() {
                 <button
                     type="button"
                     className={clsx(
-                        `${isTheme === 'dark' ? 'text-white  hover:text-gray-200' : 'text-black hover:text-gray-800'} px-4 h-12 bg-gray-500/5 rounded-lg hover:bg-gray-500/10 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2  flex items-center`,
+                        `${isTheme === 'dark' ? 'text-white  hover:text-gray-200' : 'text-black hover:text-gray-800'} px-4 h-12 bg-gray-500/5 rounded-lg hover:bg-gray-500/10 transition-all duration-200 border-2 border-primary/70 flex items-center`,
                         transition && 'transition-transform',
                         expanded && !showCollapseButton && 'translate-y-4',
                         (!expanded || showCollapseButton) && 'pointer-events-auto '
