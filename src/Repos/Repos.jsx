@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 import { FaCode, FaStar } from "react-icons/fa";
 import { BiGitRepoForked } from "react-icons/bi";
+import { useTheme } from '../constants/theme';
 
 // let testimonials = [
 
@@ -40,17 +41,17 @@ function Testimonial({ html_url, full_name, name, expanded, description, languag
             setFocusable(false)
         }
     }, [])
-
+    const { isTheme, toggleTheme } = useTheme();
     return (
 
         <a ref={ref} href={html_url} target="_blank" rel="noreferrer">
-            <div className="cursor-pointer group relative bg-gray-600/5 shadow-2xl overflow-hidden border border-gray-500/25 hover:border-primary hover:shadow-xl rounded-lg overflow-hidden p-4 transition-all duration-200">
+            <div className="cursor-pointer group relative bg-gray-500/5 shadow-lg lg:shadow-2xl border border-gray-500/25 hover:border-primary hover:shadow-xl rounded-lg overflow-hidden p-4 transition-all duration-200 mx-4 lg:mx-0">
                 <div className="absolute w-full h-full top-0 right-0 transition-all duration-200">
                     <img src={`https://opengraph.githubassets.com/15ced7abddd056302fa4e531c75f0c1e3510242eca654c93dd8a8f2b5cc92d44/${full_name}`} alt="repo's image" className="opacity-50 group-hover:opacity-100 transition-all duration-200 w-full h-full rounded-lg" />
-                    <div className="absolute w-full h-full top-0 right-0 bg-gradient-to-t from-white dark:from-black to-white/50 dark:to-black/90" />
+                    <div className={`absolute w-full h-full top-0 right-0 bg-gradient-to-t ${isTheme === 'dark' ? 'text-white  hover:text-gray-200 dark:from-black dark:to-black/90' : 'text-black hover:text-gray-800 from-white  to-white/50 '}`} />
                 </div>
                 <div className="relative">
-                    <h2 className="font-display text-lg font-medium text-black dark:text-white">{name}</h2>
+                    <h2 className={`font-display text-lg font-medium ${isTheme === 'dark' ? 'text-white  hover:text-gray-200' : 'text-black hover:text-gray-800'}`}>{name}</h2>
                     <p className="font-display h-10 text-sm text-gray-500 font-light mt-1">{description}</p>
                     <div className="flex items-center justify-between gap-4 mt-10">
                         <div className="flex items-center">
@@ -75,6 +76,7 @@ function Testimonial({ html_url, full_name, name, expanded, description, languag
 }
 
 export function Repos() {
+    const { isTheme, toggleTheme } = useTheme();
     let ref = useRef()
     let [expanded, setExpanded] = useState(false)
     let [showCollapseButton, setShowCollapseButton] = useState(false)
@@ -142,7 +144,7 @@ export function Repos() {
     useEffect(() => {
         getRepositories();
     }, []);
-
+  
     return (
         <section
             ref={ref}
@@ -165,18 +167,18 @@ export function Repos() {
             <div
                 className={clsx(
                     'inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-white pt-32 pb-8 pointer-events-none dark:from-neutral-900/0',
-                    expanded ? 'sticky -mt-52 animate-pulse' : 'absolute -bottom-24',
+                    expanded ? 'sticky -mt-56 lg:-mt-52' : 'absolute -bottom-[80px] lg:-bottom-[100px]',
                     transition && 'transition-opacity duration-300',
-                    expanded && (showCollapseButton ? 'opacity-100' : 'opacity-0')
+                    expanded && (showCollapseButton ? 'opacity-100 animate-pulse' : 'opacity-0')
                 )}
             >
                 <button
                     type="button"
                     className={clsx(
-                        'text-white  hover:text-gray-200 px-4 h-12 bg-gray-500/5 rounded-lg hover:bg-gray-500/10 transition-all duration-200 relative focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 text-sm font-semibold flex items-center',
+                        `${isTheme === 'dark' ? 'text-white  hover:text-gray-200' : 'text-black hover:text-gray-800'} px-4 h-12 bg-gray-500/5 rounded-lg hover:bg-gray-500/10 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2  flex items-center`,
                         transition && 'transition-transform',
                         expanded && !showCollapseButton && 'translate-y-4',
-                        (!expanded || showCollapseButton) && 'pointer-events-auto'
+                        (!expanded || showCollapseButton) && 'pointer-events-auto '
                     )}
                     onClick={() => setExpanded(!expanded)}
                 >
