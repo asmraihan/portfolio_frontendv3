@@ -6,30 +6,6 @@ import { FaCode, FaStar } from "react-icons/fa";
 import { BiGitRepoForked } from "react-icons/bi";
 import { useTheme } from '../constants/theme';
 
-// let testimonials = [
-
-//   [
-//     {
-//         html_url: 'I feel like an idiot for not using Tailwind CSS until now.',
-//         full_name: 'https://twitter.com/ryanflorence/status/1187951799442886656',
-//         name: 'asd asm',
-//         description: 'I feel like an idiot for not using Tailwind CSS until now.',
-//         language: 'JavaScript',
-//         stargazers_count: '2',
-//         forks_count: '4',
-//     },
-//   
-//     // {
-//     //   content: 'I feel like an idiot for not using Tailwind CSS until now.',
-//     //   url: 'https://twitter.com/ryanflorence/status/1187951799442886656',
-//     //   author: {
-//     //     name: 'Ryan Florence',
-//     //     role: 'Remix & React Training',
-//     //   },
-//     // }
-//   ],
-// ]
-
 
 
 function Testimonial({ html_url, full_name, name, expanded, description, language, stargazers_count, forks_count }) {
@@ -44,8 +20,8 @@ function Testimonial({ html_url, full_name, name, expanded, description, languag
     const { isTheme, toggleTheme } = useTheme();
     return (
 
-        <a ref={ref} href={html_url} target="_blank" rel="noreferrer">
-            <div className="cursor-pointer group relative bg-gray-500/5 shadow-lg lg:shadow-2xl border border-gray-500/25 hover:border-primary hover:shadow-xl rounded-lg overflow-hidden p-4 transition-all duration-200 mx-4 lg:mx-0">
+        <a data-aos="fade-up" ref={ref} href={html_url} target="_blank" rel="noreferrer">
+            <div className="cursor-pointer group relative bg-gray-500/5 shadow-lg border border-gray-500/25 hover:border-primary hover:shadow-xl rounded-lg overflow-hidden p-4 transition-all duration-200 mx-4 lg:mx-0">
                 <div className="absolute w-full h-full top-0 right-0 transition-all duration-200">
                     <img src={`https://opengraph.githubassets.com/15ced7abddd056302fa4e531c75f0c1e3510242eca654c93dd8a8f2b5cc92d44/${full_name}`} alt="repo's image" className="opacity-50 group-hover:opacity-100 transition-all duration-200 w-full h-full rounded-lg" />
                     <div className={`absolute w-full h-full top-0 right-0 bg-gradient-to-t ${isTheme === 'dark' ? 'text-white  hover:text-gray-200 dark:from-black dark:to-black/90' : 'text-black hover:text-gray-800 from-white  to-white/50 '}`} />
@@ -125,6 +101,7 @@ export function Repos() {
 
     // here i think i need to map the data from github api
     const [testimonials, setTestimonials] = useState([]);
+    console.log('noice', testimonials)
     const [loading, setLoading] = useState(true);
     console.log('noice', testimonials)
     const getRepositories = async () => {
@@ -134,7 +111,7 @@ export function Repos() {
                 setTestimonials(
                     data.filter((d) => d.fork === false)
                         .sort((a, b) => {
-                            return b.stargazers_count - a.stargazers_count;
+                            return b.created_at - a.created_at;
                         })
                 );
             })
@@ -160,14 +137,15 @@ export function Repos() {
                     !expanded && 'max-h-[24rem] overflow-hidden'
                 )}
             >
-                {testimonials?.sort((a, b) => b.stargazers_count - a.stargazers_count).map((column) => (
+                {/* {testimonials?.sort((a, b) => b.stargazers_count - a.stargazers_count).map((column) => ( */}
+                {testimonials?.map((column) => (
                     <Testimonial key={column.name} expanded={expanded} {...column} />
                 ))}
             </div>
             <div
                 className={clsx(
                     'inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-white pb-20 lg:pb-16 pointer-events-none dark:from-neutral-900/0',
-                    expanded ? 'sticky -mt-56 lg:-mt-52' : 'absolute -bottom-[120px] lg:-bottom-[120px]',
+                    expanded ? 'sticky -mt-24 lg:-mt-20' : 'absolute -bottom-[120px] lg:-bottom-[120px]',
                     transition && 'transition-opacity duration-300',
                     expanded && (showCollapseButton ? 'opacity-100 animate-pulse' : 'opacity-0')
                 )}
@@ -175,7 +153,7 @@ export function Repos() {
                 <button
                     type="button"
                     className={clsx(
-                        `${isTheme === 'dark' ? 'text-white  hover:text-gray-200' : 'text-black hover:text-gray-800'} px-4 h-12 bg-gray-500/5 rounded-lg hover:bg-gray-500/10 transition-all duration-200 border-2 border-primary/70 flex items-center`,
+                        `${isTheme === 'dark' ? 'text-white  hover:text-gray-200' : 'text-black hover:text-gray-800'} px-4 h-12 font-semibold bg-gray-500/5 rounded-lg hover:bg-gray-500/10 transition-all duration-200 border-2 border-primary/70 flex items-center`,
                         transition && 'transition-transform',
                         expanded && !showCollapseButton && 'translate-y-4',
                         (!expanded || showCollapseButton) && 'pointer-events-auto '
