@@ -9,7 +9,7 @@ const Contact = () => {
             <form>
                 <h1 className="text-4xl font-bold">Contact</h1>
                 <p className="text-sm mt-1 text-gray-500">
-                    <FaEnvelope className='inline-block my-4'></FaEnvelope> raihan.dev@mail.com
+                    <FaEnvelope className='inline-block w-4 h-4 my-4 mt-[14px]'></FaEnvelope> asmraihanctg14@gmail.com
                 </p>
 
                 <div className="mb-6">

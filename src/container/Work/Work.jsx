@@ -45,7 +45,7 @@ const Work = () => {
     return (
         <div className='w-5/6 relative flex flex-col justify-center items-center min-h-screen'>
             <h2 data-aos="zoom-in" className='text-3xl lg:text-4xl font-bold text-center mt-10'>My Works</h2>
-            <h4 data-aos="zoom-in" className='text-xl lg:text-2xl text-center mt-4 mb-8'><span>Things</span> <span>I've been working so far</span></h4>
+            <h4 data-aos="zoom-in" className='text-xl lg:text-2xl text-center mt-4 mb-8'><span>Things</span> <span>I've been working on so far</span></h4>
 
             <div data-aos="zoom-in-up" className='flex justify-center gap-4 lg:gap-10 items-center flex-wrap my-4'>
                 {/* {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => ( */}

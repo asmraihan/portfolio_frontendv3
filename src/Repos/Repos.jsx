@@ -122,7 +122,7 @@ export function Repos() {
             className="relative max-w-7xl mx-auto px-4 focus:outline-none sm:px-3 md:px-5 my-20"
         >
             <h2 data-aos="zoom-in" className='text-3xl lg:text-4xl font-bold text-center mt-10'>GitHub Repos</h2>
-            <h4 data-aos="zoom-in" className='text-xl lg:text-2xl text-center mt-4 mb-8'><span>Things</span> <span>I've been working so far</span></h4>
+            <h4 data-aos="zoom-in" className='text-xl lg:text-2xl text-center mt-4 mb-8'><span>Things</span> <span>I've been working on so far</span></h4>
             <div
                 ref={inViewRef}
                 className={clsx(

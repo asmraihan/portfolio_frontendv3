@@ -84,7 +84,7 @@ const Header = () => {
                         <a href='https://drive.google.com/file/d/1pCpZ2Q50oOEMN0e5LUY5Hi_IxgVkI3EO/view?usp=drive_link' className="scale-100 hover:scale-105 duration-300 transition-all hover:border-dashed  rounded-lg border-2 border-gray-500/20 border-dotted px-4 py-2 text-center">
                             <p className="text-primary uppercase">Resume</p>
                             {/* <p className="text-gray-500 font-semibold text-xl mr-4"> </p> Resume  */}
-                            <FaSignInAlt className='inline-block text-sm mb-1'></FaSignInAlt>
+                            <FaSignInAlt className='inline-block mb-1 text-gray-500 font-semibold text-xl'></FaSignInAlt>
                         </a>
                     </div>
                 </div>
@@ -126,13 +126,13 @@ const Header = () => {
                   }}
                 className='absolute -right-14 top-6 h-full'>
                 <div className='hidden lg:block w-24 -ml-64 mt-16 absolute rounded-full shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]'>
-                    <img className='p-3' src={images.node} alt="circle" />
+                    <img className='p-3' src={images.tailwind} alt="circle" />
                 </div>
-                <div className='hidden lg:block w-36 -ml-36 mt-24 absolute rounded-full shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]'>
+                <div className='hidden lg:block w-36 -ml-36 mt-28 absolute rounded-full shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]'>
                     <img className='p-3' src={images.react} alt="circle" />
                 </div>
                 <div className='hidden lg:block w-20 -ml-40 mt-72 absolute rounded-full  shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]'>
-                    <img className='p-3' src={images.css} alt="circle" />
+                    <img className='p-3' src={images.node} alt="circle" />
                 </div>
             </motion.div>
 
