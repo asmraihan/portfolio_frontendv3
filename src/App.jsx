@@ -9,7 +9,7 @@ import Skills from "./container/Skills/Skills"
 import Work from "./container/Work/Work"
 
 import MessengerCustomerChat from 'react-messenger-customer-chat';
-
+import { Toaster } from 'react-hot-toast';
 import './index.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -33,6 +33,7 @@ function App() {
         appId="261217793292489"
         // htmlRef="<REF_STRING>"
       />
+      <Toaster />
       <Footer></Footer>
       <div className="color-layout layout-purple position-right-top" />
       <div className="color-layout layout-blue position-left-bottom" />
