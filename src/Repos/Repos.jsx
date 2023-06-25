@@ -126,8 +126,8 @@ export function Repos() {
             <div
                 ref={inViewRef}
                 className={clsx(
-                    'grid grid-cols-1 gap-6 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3',
-                    !expanded && 'max-h-[24rem] overflow-hidden'
+                    'grid grid-cols-1 gap-6 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3 mt-12',
+                    !expanded && 'max-h-[36rem] lg:max-h-[24rem] overflow-hidden'
                 )}
             >
                 {/* sort github repos by last modified date */}
@@ -139,7 +139,7 @@ export function Repos() {
             <div
                 className={clsx(
                     'inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-white pb-20 lg:pb-16 pointer-events-none dark:from-neutral-900/0',
-                    expanded ? 'sticky mt-6 lg:mt-10 ' : ' absolute -bottom-[140px] lg:-bottom-[120px]',
+                    expanded ? 'sticky mt-6 lg:mt-10 ' : ' absolute -bottom-[136px] lg:-bottom-[120px]',
                     transition && 'transition-opacity duration-300',
                     expanded && (showCollapseButton ? 'opacity-100 animate-pulse' : 'opacity-0')
                 )}

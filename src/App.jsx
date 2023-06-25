@@ -7,6 +7,9 @@ import Footer from "./container/Footer/Footer"
 import Header from "./container/Header/Header"
 import Skills from "./container/Skills/Skills"
 import Work from "./container/Work/Work"
+
+import MessengerCustomerChat from 'react-messenger-customer-chat';
+
 import './index.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -25,6 +28,11 @@ function App() {
       <Repos></Repos>
       <Skills></Skills>
       <Contact></Contact>
+      <MessengerCustomerChat
+        pageId="112561170394707"
+        appId="261217793292489"
+        // htmlRef="<REF_STRING>"
+      />
       <Footer></Footer>
       <div className="color-layout layout-purple position-right-top" />
       <div className="color-layout layout-blue position-left-bottom" />
