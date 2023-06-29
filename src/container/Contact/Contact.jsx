@@ -49,9 +49,9 @@ const Contact = () => {
                         name="from_name"
                         id="name"
                         className="relative flex p-2.5  dark:text-white rounded-lg bg-gray-400/10 dark:bg-gray-500/5 dark:hover:bg-gray-500/10 hover:bg-gray-400/20 outline-none border-2 border-white/0 w-full transition-all duration-200 ease-in-out sm:text-sm sm:leading-5  focus:bg-gray-400/20 focus:border-primary/100"
-                        placeholder="User name"
-
-                        required=""
+                        placeholder="Enter your name"
+                        required
+                       
                     />
                 </div>
                 <div className="mb-6">
@@ -66,8 +66,8 @@ const Contact = () => {
                         name="from_email"
                         id="email"
                         className="relative flex p-2.5  dark:text-white rounded-lg bg-gray-400/10 dark:bg-gray-500/5 dark:hover:bg-gray-500/10 hover:bg-gray-400/20 outline-none border-2 border-white/0 w-full transition-all duration-200 ease-in-out sm:text-sm sm:leading-5  focus:bg-gray-400/20 focus:border-primary/100"
-                        placeholder="emailaddress@mail.com"
-                        required=""
+                        placeholder="Enter your email address"
+                        required
                     />
                 </div>
 
@@ -84,7 +84,7 @@ const Contact = () => {
                         rows={4}
                         className="relative flex p-2.5  dark:text-white rounded-lg bg-gray-400/10 dark:bg-gray-500/5 dark:hover:bg-gray-500/10 hover:bg-gray-400/20 outline-none border-2 border-white/0 w-full transition-all duration-200 ease-in-out sm:text-sm sm:leading-5  focus:bg-gray-400/20 focus:border-primary/100"
                         placeholder="Leave a message..."
-                        defaultValue={""}
+                        required
                     />
 
                 </div>

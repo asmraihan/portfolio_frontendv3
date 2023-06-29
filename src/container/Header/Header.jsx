@@ -83,8 +83,8 @@ const Header = () => {
                         </div>
                         <a href='https://drive.google.com/file/d/1pCpZ2Q50oOEMN0e5LUY5Hi_IxgVkI3EO/view?usp=drive_link' className="scale-100 hover:scale-105 duration-300 transition-all hover:border-dashed  rounded-lg border-2 border-gray-500/20 border-dotted px-4 py-2 text-center">
                             <p className="text-primary uppercase">Resume</p>
-                            {/* <p className="text-gray-500 font-semibold text-xl mr-4"> </p> Resume  */}
-                            <FaSignInAlt className='inline-block mb-1 text-gray-500 font-semibold text-xl'></FaSignInAlt>
+                            <p className="text-gray-500 font-semibold text-lg ">View <FaSignInAlt className='inline-block mb-1 text-gray-500 font-semibold text-xl'></FaSignInAlt></p> 
+                          
                         </a>
                     </div>
                 </div>

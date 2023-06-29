@@ -17,8 +17,8 @@ const ScrollIndicator = () => {
     }, [])
 
     return (
-        <div className='progress wrapper  h-3 sticky top-0 left-0 z-40 w-full'>
-            <div className='progress style h-3 bg-gradient-to-r from-primary to-blue-700 opacity-50  ' style={{ width: `${scrollTop}%` }}>
+        <div className='progress wrapper h-2 sticky top-0 left-0 z-40 w-full'>
+            <div className='progress style  h-2 bg-gradient-to-r from-primary to-sky-500 opacity-50  ' style={{ width: `${scrollTop}%` }}>
 
             </div>
         </div>
