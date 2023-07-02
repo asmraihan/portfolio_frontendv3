@@ -8,7 +8,7 @@ import { useTheme } from '../constants/theme';
 
 
 
-function Testimonial({ html_url, full_name, name, expanded, description, language, stargazers_count, forks_count }) {
+function Repository({ html_url, full_name, name, expanded, description, language, stargazers_count, forks_count }) {
     let [focusable, setFocusable] = useState(true)
     let ref = useRef()
 
@@ -100,13 +100,13 @@ export function Repos() {
     }, [expanded, showCollapseButton, inView])
 
     // here i think i need to map the data from github api
-    const [testimonials, setTestimonials] = useState([]);
+    const [repositories, setRepositories] = useState([]);
     const [loading, setLoading] = useState(true);
     const getRepositories = async () => {
         fetch("https://api.github.com/users/asmraihan/repos")
             .then((response) => response.json())
             .then((data) => {
-                setTestimonials(data);
+                setRepositories(data);
             })
             .finally(() => setLoading(false));
     };
@@ -131,9 +131,9 @@ export function Repos() {
                 )}
             >
                 {/* sort github repos by last modified date */}
-                {testimonials?.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at)).map((column) => (
+                {repositories?.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at)).map((column) => (
 
-                    <Testimonial key={column.name} expanded={expanded} {...column} />
+                    <Repository key={column.name} expanded={expanded} {...column} />
                 ))}
             </div>
             <div

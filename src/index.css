@@ -7,13 +7,17 @@ body {
     background: #f5f5f5;
     color: #000;
     overflow-x: hidden !important;
+    transition: 0.5s all ease;
 }
+
 
 .dark body {
     background: #050505;
     color: #fff;
     overflow-x: hidden !important;
+
 }
+
 
 * {
     font-family: 'Lexend Deca', sans-serif;

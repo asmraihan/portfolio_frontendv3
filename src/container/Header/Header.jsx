@@ -71,15 +71,15 @@ const Header = () => {
                     <div className="w-5/6 cursor-pointer lg:w-auto grid grid-cols-1 lg:grid-cols-4 gap-4 lg:mt-24 mt-16">
                         <div className="scale-100 hover:scale-105 duration-300 transition-all hover:border-dashed rounded-lg border-2 border-gray-500/20 border-dotted px-4 py-2 text-center">
                             <span className="text-primary uppercase ">Technologies</span>
-                            <p className="text-gray-500 font-semibold text-xl">30+</p>
+                            <p className="text-gray-500 font-semibold text-xl">35+</p>
                         </div>
                         <div className="scale-100 hover:scale-105 duration-300 transition-all hover:border-dashed  rounded-lg border-2 border-gray-500/20 border-dotted px-4 py-2 text-center">
                             <span className="text-primary uppercase">Years of Experience</span>
-                            <p className="text-gray-500 font-semibold text-xl">1year+</p>
+                            <p className="text-gray-500 font-semibold text-xl">1 year+</p>
                         </div>
                         <div className="scale-100 hover:scale-105 duration-300 transition-all hover:border-dashed  rounded-lg border-2 border-gray-500/20 border-dotted px-4 py-2 text-center">
                             <span className="text-primary uppercase">Completed Projects</span>
-                            <p className="text-gray-500 font-semibold text-xl">15+</p>
+                            <p className="text-gray-500 font-semibold text-xl">20+</p>
                         </div>
                         <a href='https://drive.google.com/file/d/1pCpZ2Q50oOEMN0e5LUY5Hi_IxgVkI3EO/view?usp=drive_link' className="scale-100 hover:scale-105 duration-300 transition-all hover:border-dashed  rounded-lg border-2 border-gray-500/20 border-dotted px-4 py-2 text-center">
                             <p className="text-primary uppercase">Resume</p>
