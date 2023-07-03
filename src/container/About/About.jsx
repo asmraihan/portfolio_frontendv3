@@ -3,6 +3,10 @@ import { images } from '../../constants';
 import { AppWrap } from '../../wrapper';
 import { useTheme } from '../../constants/theme';
 import { easeInOut, motion } from 'framer-motion';
+import { useRef } from 'react';
+
+const phrase = `Hello! I'm Raihan,  I am a Fullstack developer from Bangladesh. I started with Javascript, developed some Frontend projects. For the past year i have been trying to improve my software knowledge everyday, finally here I am. <br /> You can contact me for more information about me.` 
+
 const abouts = [
     { title: 'Frontend', description: 'React, Tailwind, Material-UI', imgUrl: images.about01 },
     { title: 'Backend', description: 'ExpressJS, MongoDB', imgUrl: images.about02 },
@@ -11,19 +15,41 @@ const abouts = [
 ]
 const PreviewAnimation = {
     initial: {
-      opacity: 0, 
+        opacity: 0,
     },
     animate: {
-      opacity: 1,
-      transition: {
-        ease: [0.6, 0.01, 0.05, 0.95],
-        duration: 0.8,
-      }
+        opacity: 1,
+        transition: {
+            ease: [0.6, 0.01, 0.05, 0.95],
+            duration: 0.8,
+        }
     }
-  }
+}
 
 const About = () => {
     const { isTheme, toggleTheme } = useTheme();
+
+    let refs = useRef([]);
+    const container = useRef(null);
+    let body = [];
+
+
+    const splitWords = (phrase) => {
+        phrase.split(" ").forEach((word, i) => {
+            const letters = splitLetters(word);
+            body.push(<p key={word + "_" + i}>{letters}</p>)
+        })
+        return body
+    }
+    /* https://blog.olivierlarose.com/tutorials/text-gradient-opacity-on-scroll */
+    const splitLetters = (word) => {
+        let letters = []
+        word.split("").forEach((letter, i) => {
+            letters.push(<span key={letter + "_" + i} ref={el => { refs.current.push(el) }}>{letter}</span>)
+        })
+        return letters;
+    }
+
     return (
         <div className='relative flex flex-col justify-center items-center min-h-screen '>
             <h2 data-aos="zoom-in-up" className='text-4xl font-bold text-center'>About me</h2>
@@ -32,9 +58,9 @@ const About = () => {
                     abouts.map((about, index) => (
 
                         <motion.div
-                        initial="initial"
-                        whileInView="animate"
-                        variants={PreviewAnimation}  
+                            initial="initial"
+                            whileInView="animate"
+                            variants={PreviewAnimation}
                             className={`flip-effect ${isTheme === 'dark' ? 'dark:bg-[#0F1011]' : 'bg-gray-500/5'}   flex justify-between p-4 rounded-lg gap-4 w-11/12 lg:w-[480px] mx-auto`}
                             key={index}
                         >
@@ -54,13 +80,19 @@ const About = () => {
                 <div className="flex flex-col lg:flex-row justify-between items-center py-24 gap-24">
                     <div>
                         <h1 className="text-4xl font-bold mb-3">Who Am <span className="relative whitespace-nowrap text-primary">I</span>?</h1>
-                        <p className="text-xl mt-1">
+                        <p className="text-xl mt-1 tracking-wide ">
 
                             Hello! I'm Raihan, <br /> I am a Fullstack developer from Bangladesh. I started with Javascript, developed some Frontend projects.
                             For the past year i have been trying to improve my software knowledge everyday, finally here I am. <br /> You can contact me for more information about me.
-                          
-                        </p>
 
+                        </p>
+                        {/* <div ref={container} className='flex text-[#D3D3D3] text-xl mt-1'>
+                            <div ref={body} className='flex flex-wrap mr-2'>
+                                {
+                                    splitWords(phrase)
+                                }
+                            </div>
+                        </div> */}
                     </div>
                     <div className="relative flex-shrink-0 hover:animate-pulse">
                         <img src={`${isTheme === 'dark' ? 'https://i.ibb.co/ZxMqQ6F/medark.jpg' : 'https://i.ibb.co/thwbhK7/melight.jpg'}`} style={{ zIndex: 1 }} className="relative shadow-xl z-1 w-full lg:w-64 h-full lg:h-64 rounded-full lg:rounded-lg" />
