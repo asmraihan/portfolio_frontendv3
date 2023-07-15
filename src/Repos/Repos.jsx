@@ -101,9 +101,10 @@ export function Repos() {
 
     // here i think i need to map the data from github api
     const [repositories, setRepositories] = useState([]);
+    console.log(repositories)
     const [loading, setLoading] = useState(true);
     const getRepositories = async () => {
-        fetch("https://api.github.com/users/asmraihan/repos")
+        fetch("https://api.github.com/users/asmraihan/repos?per_page=100")
             .then((response) => response.json())
             .then((data) => {
                 setRepositories(data);
@@ -131,7 +132,7 @@ export function Repos() {
                 )}
             >
                 {/* sort github repos by last modified date */}
-                {repositories?.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at)).map((column) => (
+                {repositories?.sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at)).map((column) => (
 
                     <Repository key={column.name} expanded={expanded} {...column} />
                 ))}
