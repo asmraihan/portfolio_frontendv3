@@ -1,4 +1,70 @@
-[
+[ 
+  {
+    "_createdAt": "2023-04-24T09:42:23Z",
+    "_id": "144c9332-6219-47cf-ae63-068996cf8f27",
+    "_rev": "bOAZZ17pVhEULXs1hkUk84",
+    "_type": "works",
+    "_updatedAt": "2023-04-24T09:42:23Z",
+    "codeLink": "https://github.com/asmraihan/scribble-replicate",
+    "description": "An AI scribble to art generator with replica model. Created with typescript, nextjs and convex",
+    "imgUrl": {
+      "_type": "image",
+      "asset": {
+        "_ref": "https://i.ibb.co/TP8hB7N/2023-07-21-11-48-07-page-tsx-scribble-replicate-Visual-Studio-Code-Small.png",
+        "_type": "reference"
+      }
+    },
+    "projectLink": "https://scribble-replicate.vercel.app",
+    "tags": [
+      "React JS",
+      "All"
+    ],
+    "title": "Scribble"
+  },
+  {
+    "_createdAt": "2023-04-24T09:42:23Z",
+    "_id": "144c9332-6219-47cf-ae63-068996cf8f23",
+    "_rev": "bOAZZ17pVhEULXs1hkUk84",
+    "_type": "works",
+    "_updatedAt": "2023-04-24T09:42:23Z",
+    "codeLink": "https://github.com",
+    "description": "GitHub stats and repo checker built with react native, typescript",
+    "imgUrl": {
+      "_type": "image",
+      "asset": {
+        "_ref": "https://i.ibb.co/C9RwZZx/Whats-App-Image-2023-07-21-at-3-42-34-PM.jpg",
+        "_type": "reference"
+      }
+    },
+    "projectLink": "https://github.com/asmraihan/repo-stats",
+    "tags": [
+      "React Native",
+      "All"
+    ],
+    "title": "GitHub Repo"
+  },
+  {
+    "_createdAt": "2023-04-24T09:42:23Z",
+    "_id": "144c9332-6219-47cf-ae63-068996cf8f27",
+    "_rev": "bOAZZ17pVhEULXs1hkUk84",
+    "_type": "works",
+    "_updatedAt": "2023-04-24T09:42:23Z",
+    "codeLink": "https://github.com/asmraihan/task-zustand",
+    "description": "A task manager with typescript, nextjs, mongodb and zustand for state management.",
+    "imgUrl": {
+      "_type": "image",
+      "asset": {
+        "_ref": "https://i.ibb.co/F4N1zxM/2023-07-21-15-36-14-works-json-portfolio-site-Visual-Studio-Code-Small.png",
+        "_type": "reference"
+      }
+    },
+    "projectLink": "https://task-zustand.vercel.app",
+    "tags": [
+      "Full-Stack",
+      "All"
+    ],
+    "title": "Task Manager"
+  },
   {
     "_createdAt": "2023-04-24T09:42:23Z",
     "_id": "144c9332-6219-47cf-ae63-068996cf8f23",
