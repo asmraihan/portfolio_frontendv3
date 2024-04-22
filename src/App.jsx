@@ -7,13 +7,12 @@ import Footer from "./container/Footer/Footer"
 import Header from "./container/Header/Header"
 import Skills from "./container/Skills/Skills"
 import Work from "./container/Work/Work"
-
-import MessengerCustomerChat from 'react-messenger-customer-chat';
 import { Toaster } from 'react-hot-toast';
 import './index.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Repos } from "./Repos/Repos"
+import FbMsgChat from "./components/FbMsgChat"
 AOS.init();
 
 function App() {
@@ -24,15 +23,10 @@ function App() {
       <Header></Header>
       <About></About>
       <Work></Work>
-      {/* <Repositories /> */}
       <Repos></Repos>
       <Skills></Skills>
       <Contact></Contact>
-      <MessengerCustomerChat
-        pageId="112561170394707"
-        appId="261217793292489"
-        // htmlRef="<REF_STRING>"
-      />
+      <FbMsgChat />
       <Toaster />
       <Footer></Footer>
       <div className="color-layout layout-purple position-right-top" />

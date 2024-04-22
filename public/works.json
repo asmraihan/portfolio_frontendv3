@@ -1,4 +1,71 @@
 [ 
+
+{
+  "_createdAt": "2023-04-24T09:42:23Z",
+  "_id": "144c9332-6219-47cf-ae63-068996cf8f27",
+  "_rev": "bOAZZ17pVhEULXs1hkUk84",
+  "_type": "works",
+  "_updatedAt": "2023-04-24T09:42:23Z",
+  "codeLink": "https://github.com/asmraihan/next-store",
+  "description": "E-Commerce Store built with Next-js, Typescript, Zustand, Stripe and Shadcn-ui",
+  "imgUrl": {
+    "_type": "image",
+    "asset": {
+      "_ref": "https://i.ibb.co/y8wJynj/2023-08-05-01-44-48-works-json-portfolio-site-Visual-Studio-Code-Small.png",
+      "_type": "reference"
+    }
+  },
+  "projectLink": "https://next-store-asmraihan.vercel.app",
+  "tags": [
+    "Full-Stack",
+    "All"
+  ],
+  "title": "Next E-Commerce Store"
+},
+{
+  "_createdAt": "2023-04-24T09:42:23Z",
+  "_id": "144c9332-6219-47cf-ae63-068996cf8f27",
+  "_rev": "bOAZZ17pVhEULXs1hkUk84",
+  "_type": "works",
+  "_updatedAt": "2023-04-24T09:42:23Z",
+  "codeLink": "https://github.com/asmraihan/next-admin",
+  "description": " E-Commerce admin Dashboard built with Next13, Typescript, Zustand, MySQL, Prisma and Shadcn-ui",
+  "imgUrl": {
+    "_type": "image",
+    "asset": {
+      "_ref": "https://i.ibb.co/PwT7z00/2023-08-05-01-39-57-Admin-Dashboard-Opera.png",
+      "_type": "reference"
+    }
+  },
+  "projectLink": "https://next-admin-gray.vercel.app",
+  "tags": [
+    "Full-Stack",
+    "All"
+  ],
+  "title": "Next Admin Dashboard"
+},
+{
+  "_createdAt": "2023-04-24T09:42:23Z",
+  "_id": "144c9332-6219-47cf-ae63-068996cf8f23",
+  "_rev": "bOAZZ17pVhEULXs1hkUk84",
+  "_type": "works",
+  "_updatedAt": "2023-04-24T09:42:23Z",
+  "codeLink": "https://github.com/asmraihan/",
+  "description": "AI text and image generator app built with react open-ai,react native and typescript",
+  "imgUrl": {
+    "_type": "image",
+    "asset": {
+      "_ref": "https://i.ibb.co/P42ZYSC/38013e45-fa18-4f34-8129-df4ab606fad0.jpg",
+      "_type": "reference"
+    }
+  },
+  "projectLink": "https://github.com/asmraihan/chad-ai",
+  "tags": [
+    "React Native",
+    "All"
+  ],
+  "title": "Chad AI"
+},
   {
     "_createdAt": "2023-04-24T09:42:23Z",
     "_id": "144c9332-6219-47cf-ae63-068996cf8f27",
@@ -27,7 +94,7 @@
     "_rev": "bOAZZ17pVhEULXs1hkUk84",
     "_type": "works",
     "_updatedAt": "2023-04-24T09:42:23Z",
-    "codeLink": "https://github.com",
+    "codeLink": "https://github.com/asmraihan/",
     "description": "GitHub stats and repo checker built with react native, typescript",
     "imgUrl": {
       "_type": "image",

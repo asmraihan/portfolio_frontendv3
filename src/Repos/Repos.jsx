@@ -151,7 +151,7 @@ export function Repos() {
                         `${isTheme === 'dark' ? 'text-white  hover:text-gray-200' : 'text-black hover:text-gray-800'} px-4 h-12 font-semibold bg-gray-500/5 rounded-lg hover:bg-gray-500/10 transition-all duration-200 border-2 border-primary/70 flex items-center`,
                         transition && 'transition-transform',
                         expanded && !showCollapseButton && 'translate-y-4',
-                        (!expanded || showCollapseButton) && 'pointer-events-auto '
+                        (!expanded || showCollapseButton) && 'pointer-events-auto'
                     )}
                     onClick={() => setExpanded(!expanded)}
                 >

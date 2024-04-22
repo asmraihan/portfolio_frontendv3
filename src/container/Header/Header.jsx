@@ -48,13 +48,12 @@ const Header = () => {
         }}
         className=' absolute -left-12 -z-10 w-full h-[90%]'
       >
-        <div className='header badge absolute top-16 z-50'>
+        {/* <div className='header badge absolute top-16 z-50'>
           <div className="rounded-lg hidden lg:block border-2 border-gray-500/20 border-dotted px-4 py-2 text-center">
             <span className="text-primary uppercase">under</span>
             <p className="text-orange-500 font-semibold text-xl uppercase">development</p>
           </div>
-
-        </div>
+        </div> */}
       </motion.div>
       <motion.div
         initial="initial"
@@ -82,29 +81,13 @@ const Header = () => {
               <p className="text-gray-500 font-semibold text-xl">1 year+</p>
             </a>
 
-            <a href='https://drive.google.com/file/d/1pCpZ2Q50oOEMN0e5LUY5Hi_IxgVkI3EO/view?usp=drive_link' className="scale-100 hover:scale-105 duration-300 transition-all hover:border-dashed  rounded-lg border-2 border-gray-500/20 border-dotted px-4 py-2 text-center">
-              <p className="text-primary uppercase">Resume</p>
+            <a href='https://drive.google.com/file/d/1D2ELMC1HdmHxjXBSqtqdwq9nCCXl95v6/view?usp=drive_link' className="scale-100 hover:scale-105 duration-300 transition-all hover:border-dashed  rounded-lg border-2 border-gray-500/20 border-dotted px-4 py-2 text-center">
+              <p className="text-primary uppercase">CV/Resume</p>
               <p className="text-gray-500 font-semibold text-lg ">View <FaSignInAlt className='inline-block mb-1 text-gray-500 font-semibold text-xl'></FaSignInAlt></p>
 
             </a>
           </div>
         </div>
-        {/* <motion.img
-                    whileInView={{ scale: [0, 1] }}
-                    transition={{ duration: 1, ease: 'easeInOut' }}
-                    className='overlay circle absolute top-20 left-0 right-0 bottom-0 -z-10 w-full h-[50%]'
-                    src={images.ex}
-                /> */}
-        {/* <motion.div
-
-                    whileInView={{ scale: [0.5, 1] }}
-                    animate={screenX}
-                    transition={{ duration: 1, ease: 'easeInOut' }}
-                    className={`overlay absolute top-0 right-0 left-0 w-full bottom-0 -z-10`}
-                >
-                      <SphereModel/>
-                </motion.div> */}
-
 
       </motion.div>
 

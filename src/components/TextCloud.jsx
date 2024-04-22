@@ -13,6 +13,7 @@ const TextCloud = () => (
         className="w-[100px] lg:w-full h-[100px] lg:h-full absolute -left-36 lg:left-0 lg:-top-28 z-40"
     >
         {[
+            "Tailwind",
             "SCSS",
             "Axios",
             "Tanstack",
@@ -26,15 +27,13 @@ const TextCloud = () => (
             "MongoDB",
             "Mongoose",
             "MySQL",
-            "PlanetScale",
+            "Postgres",
             "Prisma",
-            "Sanity",
             "Firebase",
             "Git",
-            "GitHub",
+            "cPanel",
             "Heroku",
             "JSON",
-            "ES6",
             "VS Code",
             "REST API",
             "Stripe",

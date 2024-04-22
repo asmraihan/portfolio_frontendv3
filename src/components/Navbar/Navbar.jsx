@@ -33,7 +33,7 @@ const Navbar = () => {
             <div className="py-6 px-6 lg:px-0 backdrop-blur-sm">
                 <div className="flex items-center justify-between ">
                     <div className="flex items-center gap-4 ">
-                        <a href="/" className={`relative whitespace-nowrap ${isTheme === 'dark' ? 'dark:text-[ #f5f5f5]' : 'text-[#050505]'} text-center text-2xl font-bold transition-all duration-200`}><span className="relative">Raihan</span></a>
+                        <a href="/" className={`relative whitespace-nowrap text-center text-2xl font-bold transition-all duration-200 text-[#050505] dark:text-[#f5f5f5]`}><span className="relative">Raihan</span></a>
 
                     </div>
                     {/* middle starts */}
@@ -43,8 +43,8 @@ const Navbar = () => {
                                 href={`#${tab.id}`}
                                 key={tab.id}
                                 onClick={() => setActiveTab(tab.id)}
-                                className={`${activeTab === tab.id ? "" : "hover:text-white/60"
-                                    } relative rounded-full px-3 py-1.5 font-medium ${isTheme === 'dark' ? 'dark:text-[#f5f5f5]' : 'text-[#050505]'} outline-sky-400 transition focus-visible:outline-2`}
+                                className={`${activeTab === tab.id ? "" : "hover:text-black/60 dark:hover:text-white/60"
+                                    } relative rounded-full px-3 py-1.5 font-medium  outline-sky-400 transition focus-visible:outline-2 text-[#050505] dark:text-[#f5f5f5]`}
                                 style={{
                                     WebkitTapHighlightColor: "transparent",
                                 }}
@@ -52,7 +52,7 @@ const Navbar = () => {
                                 {activeTab === tab.id && (
                                     <motion.span
                                         layoutId="bubble"
-                                        className={`absolute inset-0 z-10 ${isTheme === 'dark' ? 'dark:bg-[#f5f5f5] mix-blend-difference' : 'bg-[#3D25FA]/50 mix-blend-multiply'}`}
+                                        className={`absolute inset-0 z-10 dark:bg-[#f5f5f5] dark:mix-blend-difference bg-[#3D25FA]/50 mix-blend-multiply `}
                                         style={{ borderRadius: 9999 }}
                                         transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                                     />
@@ -64,10 +64,10 @@ const Navbar = () => {
 
                     <div className="flex items-center gap-4 ">
                         <div onClick={() => setIsOpen(true)} className="lg:hidden text-2xl text-zinc-400 hover:text-black hover:dark:text-white cursor-pointer bg-gray-500/5 w-12 h-12 flex items-center justify-center rounded-lg transition-all duration-200">
-                            <FaBars></FaBars>
+                            <FaBars />
                         </div>
                         <div onClick={() => toggleTheme()} className="text-2xl text-zinc-400 hover:text-black hover:dark:text-white cursor-pointer bg-gray-500/5 w-12 h-12 flex items-center justify-center rounded-lg transition-all duration-200">
-                            {isTheme === 'dark' ? <FaMoon></FaMoon> : <FaSun></FaSun>}
+                            <FaMoon className='flex dark:hidden' /> <FaSun className='hidden dark:flex ' />
                         </div>
 
                     </div>
@@ -98,7 +98,7 @@ const Navbar = () => {
                     leave="transition-all duration-200"
                     leaveFrom="opacity-100 translate-x-0"
                     leaveTo="opacity-0 translate-x-full"
-                    className={`fixed right-0 top-0 w-full lg:w-[30rem] h-full ${isTheme === 'dark' ? 'dark:bg-[#050505]' : 'bg-[#f5f5f5]'} lg:rounded-l-2xl p-6 z-[1000]`}
+                    className={`fixed right-0 top-0 w-full lg:w-[30rem] h-full dark:bg-[#050505] bg-[#f5f5f5]  lg:rounded-l-2xl p-6 z-[1000]`}
                 >
                     <div >
                         <div className="flex justify-between w-full items-center">
@@ -112,16 +112,16 @@ const Navbar = () => {
 
                         <div className="mt-8 space-y-2">
                             <div className="flex items-center gap-2 mb-2">
-                                <p className={`text-xs font-medium uppercase ${isTheme === 'dark' ? 'dark:text-white/50' : 'text-black/50'}`}>Menu</p>
-                                <div className={`w-full h-0.5 ${isTheme === 'dark' ? 'bg-white/50' : 'bg-black/50'}`} />
+                                <p className={`text-xs font-medium uppercase dark:text-white/50 text-black/50`}>Menu</p>
+                                <div className={`w-full h-0.5 dark:bg-white/50 bg-black/50`} />
                             </div>
                             {sections.map((section, index) => {
-                                return <a href={`#${section.id}`} key={index} 
-                                onClick={()=>setActiveTab(section.id)}>
+                                return <a href={`#${section.id}`} key={index}
+                                    onClick={() => setActiveTab(section.id)}>
                                     <p
-                                        onClick={() => setIsOpen(false) }
-                                        
-                                        className={`flex items-center gap-4 text-xl transition-all duration-200 ${activeTab === section.id ? 'bg-gray-500/5 text-black dark:text-[#3D25FA] font-semibold' : ' text-gray-600'} ${isTheme === 'dark' ? 'dark:text-[#f5f5f5]' : 'text-[#050505]'} px-4 py-3 rounded-lg`}
+                                        onClick={() => setIsOpen(false)}
+
+                                        className={`flex items-center gap-4 text-xl transition-all duration-200 ${activeTab === section.id ? 'bg-gray-500/5 text-black dark:text-[#3D25FA] font-semibold' : ' text-gray-600'} dark:text-[#f5f5f5] text-[#050505] px-4 py-3 rounded-lg`}
                                     >
 
                                         <FaCaretRight></FaCaretRight>
@@ -133,8 +133,8 @@ const Navbar = () => {
 
                         <div className="mt-8 space-y-2">
                             <div className="flex items-center gap-2">
-                                <p className={`text-xs font-medium uppercase ${isTheme === 'dark' ? 'dark:text-white/50' : 'text-black/50'}`}>Social</p>
-                                <div className={`w-full  h-0.5 ${isTheme === 'dark' ? 'bg-white/50' : 'bg-black/50'}`} />
+                                <p className={`text-xs font-medium uppercase dark:text-white/50 text-black/50`}>Social</p>
+                                <div className={`w-full  h-0.5 dark:bg-white/50 bg-black/50`} />
                             </div>
                             <div className="flex items-center gap-2">
 
@@ -153,11 +153,11 @@ const Navbar = () => {
                                         <FaWhatsapp />
                                     </div>
                                 </a>
-                              
+
 
                                 <a href="mailto:asmraihanctg14@gmail.com">
                                     <div
-                                   
+
                                         className="flex gap-2 px-4 items-center w-full h-12 bg-gray-500/5 rounded-lg hover:bg-gray-500/10 transition-all duration-200 text-zinc-400 hover:text-black hover:dark:text-white"
                                     >
                                         <FaEnvelope className='text-xl'></FaEnvelope>
