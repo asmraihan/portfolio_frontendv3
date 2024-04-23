@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 import { FaCode, FaStar } from "react-icons/fa";
 import { BiGitRepoForked } from "react-icons/bi";
-import { useTheme } from '../constants/theme';
 
 
 
@@ -17,17 +16,16 @@ function Repository({ html_url, full_name, name, expanded, description, language
             setFocusable(false)
         }
     }, [])
-    const { isTheme, toggleTheme } = useTheme();
     return (
 
         <a data-aos="fade-up" ref={ref} href={html_url} target="_blank" rel="noreferrer">
             <div className="cursor-pointer group relative bg-gray-500/5 shadow-lg border border-gray-500/25 hover:border-primary hover:shadow-xl rounded-lg overflow-hidden p-4 transition-all duration-200 mx-4 lg:mx-0">
                 <div className="absolute w-full h-full top-0 right-0 transition-all duration-200">
                     <img src={`https://opengraph.githubassets.com/15ced7abddd056302fa4e531c75f0c1e3510242eca654c93dd8a8f2b5cc92d44/${full_name}`} alt="repo's image" className="opacity-50 group-hover:opacity-100 transition-all duration-200 w-full h-full rounded-lg" />
-                    <div className={`absolute w-full h-full top-0 right-0 bg-gradient-to-t ${isTheme === 'dark' ? 'text-white  hover:text-gray-200 dark:from-black/90 dark:to-black/60' : 'text-black hover:text-gray-800 from-white/80  to-white/40 '}`} />
+                    <div className={`absolute w-full h-full top-0 right-0 bg-gradient-to-t  dark:text-white  dark:hover:text-gray-200 dark:from-black/90 dark:to-black/60 text-black hover:text-gray-800 from-white/80  to-white/40`} />
                 </div>
                 <div className="relative">
-                    <h2 className={`font-display text-lg font-medium ${isTheme === 'dark' ? 'text-white  hover:text-gray-200' : 'text-black hover:text-gray-800'}`}>{name}</h2>
+                    <h2 className={`font-display text-lg font-medium dark:text-white  dark:hover:text-gray-200 text-black hover:text-gray-800`}>{name}</h2>
                     <p className="font-display h-10 text-sm text-gray-500 font-light mt-1">{description}</p>
                     <div className="flex items-center justify-between gap-4 mt-10">
                         <div className="flex items-center">
@@ -52,7 +50,6 @@ function Repository({ html_url, full_name, name, expanded, description, language
 }
 
 export function Repos() {
-    const { isTheme, toggleTheme } = useTheme();
     let ref = useRef()
     let [expanded, setExpanded] = useState(false)
     let [showCollapseButton, setShowCollapseButton] = useState(false)
@@ -139,7 +136,7 @@ export function Repos() {
             </div>
             <div
                 className={clsx(
-                    'inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-white pb-20 lg:pb-16 pointer-events-none dark:from-neutral-900/0',
+                    'inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-white/10 pb-20 lg:pb-16 pointer-events-none dark:from-neutral-900/0',
                     expanded ? 'sticky mt-6 lg:mt-10 ' : ' absolute -bottom-[136px] lg:-bottom-[120px]',
                     transition && 'transition-opacity duration-300',
                     expanded && (showCollapseButton ? 'opacity-100 animate-pulse' : 'opacity-0')
@@ -148,7 +145,7 @@ export function Repos() {
                 <button
                     type="button"
                     className={clsx(
-                        `${isTheme === 'dark' ? 'text-white  hover:text-gray-200' : 'text-black hover:text-gray-800'} px-4 h-12 font-semibold bg-gray-500/5 rounded-lg hover:bg-gray-500/10 transition-all duration-200 border-2 border-primary/70 flex items-center`,
+                        `dark:text-white  dark:hover:text-gray-200 text-black hover:text-gray-800 px-4 h-12 font-semibold bg-gray-500/5 rounded-lg hover:bg-gray-500/10 transition-all duration-200 border-2 border-primary/70 flex items-center`,
                         transition && 'transition-transform',
                         expanded && !showCollapseButton && 'translate-y-4',
                         (!expanded || showCollapseButton) && 'pointer-events-auto'

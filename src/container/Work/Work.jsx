@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { images } from '../../constants';
-import { easeInOut, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { AppWrap } from '../../wrapper';
 import { FaEye, FaGithub } from 'react-icons/fa';
-import { useTheme } from '../../constants/theme';
 
 const Work = () => {
-    const { isTheme, toggleTheme } = useTheme();
 
     const [activeFilter, setActiveFilter] = useState('All')
     const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 })
@@ -117,7 +114,7 @@ const Work = () => {
             </div>
             {
                 filterWork.length > 8 && filterWork.length > sliceNumber &&
-                <button onClick={() => handleShowMore()} className={`px-4 h-12 bg-gray-500/5 rounded-lg hover:bg-gray-500/10 transition-all duration-200 font-semibold border-2 border-primary ${isTheme === 'dark' ? 'text-white  hover:text-gray-200' : 'text-black hover:text-gray-800'}   mt-4`}>Show more</button>
+                <button onClick={() => handleShowMore()} className={`px-4 h-12 bg-gray-500/5 rounded-lg hover:bg-gray-500/10 transition-all duration-200 font-semibold border-2 border-primary dark:text-white  dark:hover:text-gray-200 text-black hover:text-gray-800  mt-4`}>Show more</button>
             }
 
 

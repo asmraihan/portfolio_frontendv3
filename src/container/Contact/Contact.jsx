@@ -1,11 +1,10 @@
 import React, { useRef } from 'react';
-import { FaEnvelope, FaPaperPlane, FaUser } from 'react-icons/fa';
-import { useTheme } from '../../constants/theme';
+import { FaEnvelope, FaPaperPlane } from 'react-icons/fa';
 import AppWrap from '../../wrapper/AppWrap';
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
+
 const Contact = () => {
-    const { isTheme, toggleTheme } = useTheme();
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -40,7 +39,7 @@ const Contact = () => {
                 <div className="mb-6">
                     <label
                         htmlFor="name"
-                        className={`block mb-4 text-sm font-medium ${isTheme === 'dark' ? 'dark:text-[ #f5f5f5]' : 'text-gray-900'}`}
+                        className={`block mb-4 text-sm font-medium dark:text-[#f5f5f5] text-gray-900`}
                     >
                         User name
                     </label>
@@ -57,7 +56,7 @@ const Contact = () => {
                 <div className="mb-6">
                     <label
                         htmlFor="email"
-                        className={`block mb-4 text-sm font-medium ${isTheme === 'dark' ? 'dark:text-[ #f5f5f5]' : 'text-gray-900'}`}
+                        className={`block mb-4 text-sm font-medium dark:text-[#f5f5f5] text-gray-900`}
                     >
                         Your email
                     </label>
@@ -74,7 +73,7 @@ const Contact = () => {
                 <div className="flex items-start flex-col mb-6">
                     <label
                         htmlFor="message"
-                        className={`block mb-4 text-sm font-medium ${isTheme === 'dark' ? 'dark:text-[ #f5f5f5]' : 'text-gray-900'}`}
+                        className={`block mb-4 text-sm font-medium dark:text-[#f5f5f5] text-gray-900`}
                     >
                         Your message
                     </label>

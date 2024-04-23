@@ -2,7 +2,7 @@ import React from 'react';
 import { images } from '../../constants';
 import { AppWrap } from '../../wrapper';
 import { useTheme } from '../../constants/theme';
-import { easeInOut, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useRef } from 'react';
 
 const phrase = `Hello! I'm Raihan,  I am a Fullstack developer from Bangladesh. I started with Javascript, developed some Frontend projects. For the past year i have been trying to improve my software knowledge everyday, finally here I am. <br /> You can contact me for more information about me.` 
@@ -27,7 +27,7 @@ const PreviewAnimation = {
 }
 
 const About = () => {
-    const { isTheme, toggleTheme } = useTheme();
+    const { isTheme } = useTheme();
 
     let refs = useRef([]);
     const container = useRef(null);
@@ -61,7 +61,7 @@ const About = () => {
                             initial="initial"
                             whileInView="animate"
                             variants={PreviewAnimation}
-                            className={`flip-effect ${isTheme === 'dark' ? 'dark:bg-[#0F1011]' : 'bg-gray-500/5'}   flex justify-between p-4 rounded-lg gap-4 w-11/12 lg:w-[480px] mx-auto`}
+                            className={`flip-effect dark:bg-[#0F1011] bg-gray-500/5 flex justify-between p-4 rounded-lg gap-4 w-11/12 lg:w-[480px] mx-auto`}
                             key={index}
                         >
                             <div className='w-1/2'>
@@ -86,13 +86,6 @@ const About = () => {
                             For the past year i have been trying to improve my software knowledge everyday, finally here I am. <br /> You can contact me for more information about me.
 
                         </p>
-                        {/* <div ref={container} className='flex text-[#D3D3D3] text-xl mt-1'>
-                            <div ref={body} className='flex flex-wrap mr-2'>
-                                {
-                                    splitWords(phrase)
-                                }
-                            </div>
-                        </div> */}
                     </div>
                     <div className="relative flex-shrink-0 hover:animate-pulse">
                         <img src={`${isTheme === 'dark' ? 'https://i.ibb.co/ZxMqQ6F/medark.jpg' : 'https://i.ibb.co/thwbhK7/melight.jpg'}`} style={{ zIndex: 1 }} className="relative shadow-xl z-1 w-full lg:w-64 h-full lg:h-64 rounded-full lg:rounded-lg" />
