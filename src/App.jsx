@@ -13,6 +13,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Repos } from "./Repos/Repos"
 import FbMsgChat from "./components/FbMsgChat"
+import GithubCalendarComponent from "./container/Contribution/GithubCalendarComponent"
 
 AOS.init();
 
@@ -23,6 +24,7 @@ function App() {
       <ScrollIndicator></ScrollIndicator>
       <Header></Header>
       <About></About>
+      <GithubCalendarComponent/>
       <Work></Work>
       <Repos></Repos>
       <Skills></Skills>
