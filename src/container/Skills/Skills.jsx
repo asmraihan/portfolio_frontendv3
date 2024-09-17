@@ -22,11 +22,11 @@ const Skills = () => {
     // }, [])
 
     return (
-        <div className='w-5/6 mx-auto relative mt-8 flex flex-col justify-center items-center min-h-screen'>
+        <div className='w-5/6 mx-auto relative mt-8 flex flex-col justify-center items-center lg:min-h-screen my-20 lg:my-0'>
             <h2 data-aos="zoom-in" className='text-4xl font-bold text-center mb-16'>Skills & Tools</h2>
            <div data-aos="fade-up" className='lg:flex justify-center items-center '>
            <div className='lg:w-1/2 w-full mx-auto'>
-                <motion.div className='grid grid-cols-3 lg:grid-cols-4 gap-4'>
+                <motion.div className='grid grid-cols-3 md:grid-cols-4 gap-4'>
                     {
                         skills.map((skill) => (
                             <motion.div

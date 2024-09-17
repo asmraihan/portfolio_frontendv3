@@ -26,7 +26,7 @@ const PreviewAnimation = {
 
 const Header = () => {
   return (
-    <div className="lg:flex justify-center items-center relative min-h-screen">
+    <div className="lg:flex justify-center items-center relative lg:min-h-screen">
       <motion.div
         initial="initial"
         whileInView="animate"
@@ -65,7 +65,7 @@ const Header = () => {
             A full-stack developer
           </p>
 
-          <div className="w-5/6  lg:w-auto grid grid-cols-1 lg:grid-cols-4 gap-4 lg:mt-24 mt-16">
+          <div className="w-5/6 lg:w-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:mt-24 mt-16 md:mt-18">
             <a href='#work' className="scale-100 cursor-pointer hover:scale-105 duration-300 transition-all hover:border-dashed  rounded-lg border-2 border-gray-500/20 border-dotted px-4 py-2 text-center">
               <span className="text-primary uppercase">Completed Projects</span>
               <p className="text-gray-500 font-semibold text-xl">20+</p>

@@ -61,7 +61,7 @@ const Work = () => {
                 <motion.div
                     animate={animateCard}
                     transition={{ duration: 0.5, delayChildren: 0.5 }}
-                    className='grid grid-cols-1 lg:grid-cols-4 gap-8 mt-4 min-h-[356px] '
+                    className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-4 min-h-[356px] '
                 >
 
                     {/* map here*/}
